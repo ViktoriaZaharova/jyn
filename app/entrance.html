@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>JYN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper wrapper-registration">
+  <header>
+    <div class="container">
+      <a href="/" class="logo">JYN</a>
+
+      <div class="search-wrapper">
+        <form method="post" class="form-search">
+          <label>
+            <input type="text" placeholder="Поиск по играм" name="search" required>
+            <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+          </label>
+          <button type="submit" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-result">
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dark Orbit</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Drakensang Online</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Diablo Immortal</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dota 2</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="entrance.html" class="btn btn-border btn-md">Войти</a>
+        <a href="registration.html" class="btn btn-white btn-md">Зарегистрироваться</a>
+      </div>
+
+      <div class="btn-burger"></div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <section class="registration-section">
+      <div class="container">
+        <div class="registration-box">
+          <div class="registration-box__head">
+            <h2>Войти</h2>
+          </div>
+          <form method="post" class="form">
+            <div class="registration-box__body">
+
+              <div class="form-row">
+                <div class="input-title">
+                  <p>Введите email или логин</p>
+                </div>
+                <label>
+                  <input type="text" name="login" required>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <div class="input-title">
+                  <p>Введите пароль</p>
+                  <a href="password.html" class="link color-accent">Забыли пароль?</a>
+                </div>
+                <label>
+                  <input type="password" value="" class="input-password" name="password" required>
+                  <a href="#" class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></a>
+                </label>
+              </div>
+            </div>
+
+            <div class="registration-box__footer">
+              <button type="submit" class="btn btn-accent btn-lg">Войти</button>
+
+              <div class="box-text">
+                <p>Нет аккаунта?</p>
+                <a href="registration.html" class="link color-accent">Зарегистрироваться</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2022 Jyn.ru</div>
+      <a href="#" class="link color-grey" target="_blank">Центр помощи</a>
+
+      <ul class="list-social my-ul">
+        <li><a href="#">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a></li>
+        <li><a href="#" class="vk-link">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

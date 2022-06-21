@@ -1,0 +1,86 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .search-wrapper
+    max-width: 350px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  body
+    background: #1C1C1C
+
+  .search-wrapper
+    max-width: 220px
+
+  header
+    .logo
+      margin: 0 20px 0 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 640px)
+  .wrapper-registration
+    .search-wrapper
+      display: none
+    .btn-group
+      display: none
+    header
+      background: #1C1C1C
+    footer
+      display: none
+
+
+  header
+    border: none
+
+
+@media only screen and (max-width: 576px)
+  header
+    padding: 9px 0
+    margin: 0
+
+  .container
+    padding: 0 16px
+
+  .btn-group-user
+    display: none
+
+  .registration-box
+    &__head
+      padding: 0
+    &__body
+      padding: 0
+      margin: 32px 0
+    &__footer
+      padding: 0
+      border: none
+
+  .form-row
+    margin: 0 0 24px
+
+  footer
+    margin: 33px 0 0
+
+  .copyright
+    width: 100%
+    order: 1
+    margin: 12px 0 0
+
+
+
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
