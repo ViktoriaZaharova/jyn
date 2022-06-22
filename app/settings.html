@@ -144,64 +144,63 @@
 
     <section class="settings-page page">
       <div class="container">
-        <h1>Смена пароля</h1>
-        <div class="registration-box">
-          <div class="registration-box__head">
-            <h2>Пароль</h2>
+        <div class="page-wrapper">
+          <h1>Настройки</h1>
+          <div class="tabs">
+            <ul class="tabs__caption my-ul">
+              <li class="active">Общие</li>
+              <li>Безопасность</li>
+            </ul>
+            <div class="tabs__content active">
+              <div class="registration-box">
+                <div class="registration-box__head">
+                  <h2>Профиль</h2>
+                </div>
+                <form method="post" class="form form-password">
+                  <div class="registration-box__body">
+
+                    <div class="form-row form-row-profile">
+                      <div class="user-photo"></div>
+                      <a href="#" class="btn btn-border btn-md add-photo">Загрузить аватар</a>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Логин</p>
+                      </div>
+                      <label>
+                        <input type="text" value="Nick21" name="login" required>
+                      </label>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Email</p>
+                      </div>
+                      <label>
+                        <input type="text" name="email" required>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <button type="submit" class="btn btn-accent btn-lg">Сохранить изменения</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="registration-box">
+                <div class="registration-box__head">
+                  <h2>Пароль</h2>
+                </div>
+                  <div class="registration-box__body">
+
+                    <a href="edit-password.html" class="btn btn-border btn-md">Сменить пароль</a>
+                  </div>
+              </div>
+            </div>
           </div>
-          <form method="post" class="form form-password">
-            <div class="registration-box__body">
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Текущий пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
-                  и одну заглавную букву
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Повторите новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-            </div>
-
-            <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Сохранить изменения</button>
-            </div>
-          </form>
         </div>
       </div>
     </section>

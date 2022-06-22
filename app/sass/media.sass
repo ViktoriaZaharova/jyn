@@ -4,20 +4,20 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
-  /**/
+  .search-wrapper
+    max-width: 480px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .search-wrapper
-    max-width: 350px
+    max-width: 310px
 
+  .dropdown-cabinet
+    margin: 0 15px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
-  body
-    background: #1C1C1C
-
   .search-wrapper
     max-width: 220px
 
@@ -25,26 +25,69 @@
     .logo
       margin: 0 20px 0 0
 
+  .registration-box
+    max-width: 500px
+    border-radius: 16px
+    &__head
+      padding: 24px 16px 0
+    &__body
+      padding: 32px 16px
+    &__footer
+      padding: 24px 16px
+
+  .settings-page
+    h1
+      margin: 0 auto 24px
+    .form-password
+      button
+        margin: 0 auto
+
+  h1
+    font-size: 28px
+
+  .modal__div, .page-wrapper
+    max-width: 500px
+
+
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 680px)
   .wrapper-registration
     .search-wrapper
       display: none
-    .btn-group
-      display: none
+
     header
       background: #1C1C1C
+      padding: 9px 0
     footer
       display: none
 
+  body
+    background: #141414
 
   header
     border: none
+    padding: 9px 0 0
+    .btn-group
+      display: none
+
+  .search-wrapper
+    max-width: none
+    order: 1
+    width: 100%
+    margin: 9px 0 0
+
+  .btn-burger
+    display: flex
+    flex-direction: column
+
+  .user-menu, .dropdown-cabinet
+    display: none
+
 
 
 @media only screen and (max-width: 576px)
   header
-    padding: 9px 0
     margin: 0
 
   .container
@@ -53,15 +96,16 @@
   .btn-group-user
     display: none
 
-  .registration-box
-    &__head
-      padding: 0
-    &__body
-      padding: 0
-      margin: 32px 0
-    &__footer
-      padding: 0
-      border: none
+  .wrapper-registration
+    .registration-box
+      &__head
+        padding: 0
+      &__body
+        padding: 0
+        margin: 32px 0
+      &__footer
+        padding: 0
+        border: none
 
   .form-row
     margin: 0 0 24px
@@ -74,7 +118,47 @@
     order: 1
     margin: 12px 0 0
 
+  .page
+    padding: 24px 0 0
 
+  h2
+    font-size: 22px
+
+  .settings-page
+    .form-password
+      button
+        width: 100%
+
+  .modal__div
+    max-width: 343px
+    h2
+      font-size: 22px
+    &-head
+      padding: 24px 16px 32px
+    &-body
+      padding: 0 16px 32px
+    &-footer
+      padding: 24px 16px
+
+  .modal__wrapper
+    border-radius: 16px
+
+  .btn-close-modal
+    display: none
+
+  .modal-form
+    button
+      max-width: none
+      width: 100%
+
+  .page-wrapper
+    max-width: 343px
+
+  .tabs__caption
+    margin: 0 0 24px
+    li
+      padding: 0 0 12px
+      margin: 0 28px 0 0
 
 @media only screen and (max-width: 480px)
   /**/

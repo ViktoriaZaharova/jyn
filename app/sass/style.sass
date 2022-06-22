@@ -51,6 +51,8 @@ body
 html, body
   overflow-x: hidden
   height: 100%
+  &.no-scroll
+    overflow: hidden
 
 img
   display: block
@@ -90,6 +92,7 @@ input, textarea, select
   &:hover, &:focus
     outline: none
     box-shadow: none
+    background: #202020
   &:focus
     border: 1px solid #373737
 
@@ -99,16 +102,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
   -webkit-text-fill-color: transparent
   -webkit-box-shadow: 0 0 0px 1000px #282828 inset
   transition: background-color 5000s ease-in-out 0s
-
+  color: #fff
   &:hover, &:focus
     border: 1px solid transparent
     -webkit-text-fill-color: transparent
-    -webkit-box-shadow: 0 0 0px 1000px #282828 inset
+    -webkit-box-shadow: 0 0 0px 1000px #202020 inset
     transition: background-color 5000s ease-in-out 0s
     color: #fff
     opacity: 1
     &::placeholder
       color: #fff
+
+textarea
+  height: 152px
+  resize: none
+  padding: 10px 16px
 
 .form-row
   margin: 0 0 32px
@@ -146,6 +154,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
   fill: none
   stroke: #ffffff
 
+.input-subtext
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  right: 16px
+  color: #9D9D9D
+  font-size: 16px
+
 
 label
   display: block
@@ -180,10 +196,12 @@ button, .btn
   border-radius: 30px
 
 .btn-md
-  padding: 9px 24px
+  padding: 7px 24px
+  height: 40px
 
 .btn-lg
   padding: 13px 24px
+
 
 .btn-accent
   color: #fff
@@ -294,6 +312,16 @@ a.color-accent
   &:hover
     color: $hover
 
+.color-white
+  color: #fff
+
+a.color-white
+  &:hover
+    color: $accent
+
+.font-500
+  font-weight: 500
+
 .list-social
   display: flex
   align-items: center
@@ -327,5 +355,85 @@ a.color-accent
     &:last-child
       margin: 0
 
+.justify-content-end
+  justify-content: flex-end
+
+.dropdown
+  position: relative
+  cursor: pointer
+
+.dropdown-menu
+  position: absolute
+  left: 50%
+  top: 100%
+  transform: translate(-50%,0)
+  z-index: 3
+  max-width: 311px
+  width: 100%
+  background: #282828
+  border-radius: 22px
+  overflow: hidden
+  display: none
+  &__head
+    display: flex
+    align-items: center
+    border-bottom: 1px solid #2E2E2E
+    padding: 20px
+    font-weight: 500
+    width: 100%
+  &__body
+    width: 100%
 
 
+.dropdown-cabinet
+  margin: 0 32px
+  .dropdown-menu
+    top: calc(100% + 23px)
+    min-width: 311px
+
+.dropdown-menu__link
+  display: flex
+  align-items: center
+  color: #fff
+  padding: 16px 20px
+  font-size: 14px
+  width: 100%
+  border-top: 1px solid #2E2E2E
+  &-icon
+    @include d-flex
+    margin: 0 16px 0 0
+    width: 24px
+    height: 24px
+    min-width: 24px
+  &:hover
+    color: #fff
+    background: #2E2E2E
+
+.money-value
+  margin-left: auto
+
+.dropdown-toggle.active
+  .dropdown-toggle__icon
+    transform: rotate(180deg)
+
+
+.dropdown-select
+  .dropdown-toggle
+    background: #282828
+    border-radius: 8px
+    padding: 12px 16px
+    display: flex
+    align-items: center
+    &__icon
+      margin-left: auto
+      width: 16px
+      height: 16px
+      min-width: 16px
+      @include d-flex
+      background: url("../img/arrow-select.svg") no-repeat center
+        size: 100%
+    &.active
+      border-radius: 8px 8px 0 0
+  .dropdown-menu
+    max-width: none
+    border-radius: 0 0 8px

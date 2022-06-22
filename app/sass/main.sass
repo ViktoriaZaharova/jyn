@@ -6,10 +6,7 @@
   .container
     height: 100%
     align-items: center
-  h1
-    max-width: 724px
-    width: 100%
-    margin: 0 auto 36px
+
 
 .registration-box
   max-width: 724px
@@ -66,9 +63,70 @@
 /*==========  section registration-section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section settings-page ==========*/
+.settings-page
+  h1
+    margin: 0 auto 36px
 
-/*==========  section end  ==========*/
+  .form-password
+    button
+      max-width: none
+      width: fit-content
+      margin: 0 0 0 auto
+
+.page-wrapper
+  max-width: 724px
+  width: 100%
+  margin: 0 auto
+
+.form-row-profile
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 0 0 32px
+  border-bottom: 1px solid #282828
+  .user-photo
+    margin: 0 32px 0 0
+    width: 68px
+    height: 68px
+    min-width: 68px
+
+.tabs__content
+  display: none
+  &.active
+    display: block
+
+.tabs__caption
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 32px
+  border-bottom: 1px solid #202020
+  font-size: 14px
+  li
+    cursor: pointer
+    position: relative
+    padding: 0 0 16px
+    margin: 0 32px 0 0
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      width: 0
+      height: 1px
+      background: $accent
+      transition: .3s ease
+    &.active
+      &:before
+        width: 100%
+
+.link-delete
+  margin-left: 24px
+/*==========  section settings-page end  ==========*/
 
 
 /*==========  section  ==========*/

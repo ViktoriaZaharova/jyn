@@ -1,49 +1,87 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .search-wrapper {
+    max-width: 480px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .search-wrapper {
-    max-width: 350px; } }
+    max-width: 310px; }
+  .dropdown-cabinet {
+    margin: 0 15px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  body {
-    background: #1C1C1C; }
   .search-wrapper {
     max-width: 220px; }
   header .logo {
-    margin: 0 20px 0 0; } }
+    margin: 0 20px 0 0; }
+  .registration-box {
+    max-width: 500px;
+    border-radius: 16px; }
+    .registration-box__head {
+      padding: 24px 16px 0; }
+    .registration-box__body {
+      padding: 32px 16px; }
+    .registration-box__footer {
+      padding: 24px 16px; }
+  .settings-page h1 {
+    margin: 0 auto 24px; }
+  .settings-page .form-password button {
+    margin: 0 auto; }
+  h1 {
+    font-size: 28px; }
+  .modal__div, .page-wrapper {
+    max-width: 500px; } }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
   .wrapper-registration .search-wrapper {
     display: none; }
-  .wrapper-registration .btn-group {
-    display: none; }
   .wrapper-registration header {
-    background: #1C1C1C; }
+    background: #1C1C1C;
+    padding: 9px 0; }
   .wrapper-registration footer {
     display: none; }
+  body {
+    background: #141414; }
   header {
-    border: none; } }
+    border: none;
+    padding: 9px 0 0; }
+    header .btn-group {
+      display: none; }
+  .search-wrapper {
+    max-width: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin: 9px 0 0; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .user-menu, .dropdown-cabinet {
+    display: none; } }
 
 @media only screen and (max-width: 576px) {
   header {
-    padding: 9px 0;
     margin: 0; }
   .container {
     padding: 0 16px; }
   .btn-group-user {
     display: none; }
-  .registration-box__head {
+  .wrapper-registration .registration-box__head {
     padding: 0; }
-  .registration-box__body {
+  .wrapper-registration .registration-box__body {
     padding: 0;
     margin: 32px 0; }
-  .registration-box__footer {
+  .wrapper-registration .registration-box__footer {
     padding: 0;
     border: none; }
   .form-row {
@@ -55,7 +93,37 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 12px 0 0; } }
+    margin: 12px 0 0; }
+  .page {
+    padding: 24px 0 0; }
+  h2 {
+    font-size: 22px; }
+  .settings-page .form-password button {
+    width: 100%; }
+  .modal__div {
+    max-width: 343px; }
+    .modal__div h2 {
+      font-size: 22px; }
+    .modal__div-head {
+      padding: 24px 16px 32px; }
+    .modal__div-body {
+      padding: 0 16px 32px; }
+    .modal__div-footer {
+      padding: 24px 16px; }
+  .modal__wrapper {
+    border-radius: 16px; }
+  .btn-close-modal {
+    display: none; }
+  .modal-form button {
+    max-width: none;
+    width: 100%; }
+  .page-wrapper {
+    max-width: 343px; }
+  .tabs__caption {
+    margin: 0 0 24px; }
+    .tabs__caption li {
+      padding: 0 0 12px;
+      margin: 0 28px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   /**/ }

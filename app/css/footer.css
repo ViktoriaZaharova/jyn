@@ -20,5 +20,102 @@ footer {
   margin: 0 32px 0 0; }
 
 /*==========  section footer end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section modal ==========*/
+.overlay {
+  z-index: 100;
+  position: fixed;
+  background-color: #0E0E0E;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+.modal__div {
+  position: fixed;
+  max-width: 735px;
+  width: 100%;
+  height: 100%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  overflow: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  opacity: 0; }
+  .modal__div h2 {
+    font-size: 32px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .modal__div-head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 32px; }
+  .modal__div-body {
+    width: 100%;
+    padding: 0 32px 40px; }
+  .modal__div-footer {
+    width: 100%;
+    padding: 32px;
+    border-top: 1px solid #282828; }
+    .modal__div-footer .btn-group .btn {
+      margin: 0 24px 0 0; }
+      .modal__div-footer .btn-group .btn:last-child {
+        margin: 0; }
+
+.modal__close {
+  stroke: #fff;
+  fill: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto; }
+
+.modal__wrapper {
+  background: #1C1C1C;
+  border: 1px solid #282828;
+    border-radius: 22px;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative; }
+
+/*==========  section modal end  ==========*/

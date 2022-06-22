@@ -6,10 +6,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .registration-section h1 {
-    max-width: 724px;
-    width: 100%;
-    margin: 0 auto 36px; }
 
 .registration-box {
   max-width: 724px;
@@ -86,8 +82,81 @@
     margin: 0 9px 0 0; }
 
 /*==========  section registration-section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section settings-page ==========*/
+.settings-page h1 {
+  margin: 0 auto 36px; }
+
+.settings-page .form-password button {
+  max-width: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto; }
+
+.page-wrapper {
+  max-width: 724px;
+  width: 100%;
+  margin: 0 auto; }
+
+.form-row-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #282828; }
+  .form-row-profile .user-photo {
+    margin: 0 32px 0 0;
+    width: 68px;
+    height: 68px;
+    min-width: 68px; }
+
+.tabs__content {
+  display: none; }
+  .tabs__content.active {
+    display: block; }
+
+.tabs__caption {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 32px;
+  border-bottom: 1px solid #202020;
+  font-size: 14px; }
+  .tabs__caption li {
+    cursor: pointer;
+    position: relative;
+    padding: 0 0 16px;
+    margin: 0 32px 0 0; }
+    .tabs__caption li:last-child {
+      margin: 0; }
+    .tabs__caption li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 0;
+      height: 1px;
+      background: #F5682C;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    .tabs__caption li.active:before {
+      width: 100%; }
+
+.link-delete {
+  margin-left: 24px; }
+
+/*==========  section settings-page end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
