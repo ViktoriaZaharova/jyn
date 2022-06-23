@@ -142,72 +142,123 @@
 
   <div class="content">
 
-    <section class="settings-page page">
+    <section class="finance-section">
       <div class="container">
-        <div class="page-wrapper">
-        <h1>Смена пароля</h1>
-        <div class="registration-box">
-          <div class="registration-box__head">
-            <h2>Пароль</h2>
-          </div>
-          <form method="post" class="form form-password">
-            <div class="registration-box__body">
+        <h1>Мои финансы</h1>
 
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Текущий пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
-                  и одну заглавную букву
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Повторите новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-            </div>
-
-            <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Сохранить изменения</button>
-            </div>
-          </form>
-        </div>
+        <div class="finance-box">
+          <h4>Доступные средства</h4>
+          <div class="finance-box__val">3 245.50 ₽</div>
+          <a href="#modal2" class="btn btn-md btn-white open_modal">Вывод средств</a>
         </div>
       </div>
     </section>
 
+    <section class="history">
+      <div class="container">
+        <h2>История выплат</h2>
+
+        <div class="table table-history">
+          <div class="thead">
+            <div class="tr">
+              <div class="td">Дата</div>
+              <div class="td">Номер выплаты</div>
+              <div class="td">Сумма вывода</div>
+              <div class="td">Метод вывода </div>
+              <div class="td">Статус</div>
+            </div>
+          </div>
+
+          <div class="tbody">
+            <div class="tr">
+              <div class="td">
+                <p>6 июня, 2022 / 13:12</p>
+              </div>
+              <div class="td">
+                <p>#554424653</p>
+              </div>
+              <div class="td">
+                <div class="price">22 000.03 ₽</div>
+              </div>
+              <div class="td">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
+                  <div class="salesman-box__name">Банковская карта</div>
+                </div>
+              </div>
+              <div class="td td-status">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
+                  <div class="salesman-box__name">Банковская карта</div>
+                </div>
+                <div class="status-order status-order-on">
+                  <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
+                  <p>Выполнен</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tr">
+              <div class="td">
+                <p>6 июня, 2022 / 13:12</p>
+              </div>
+              <div class="td">
+                <p>#554424653</p>
+              </div>
+              <div class="td">
+                <div class="price">22 000.03 ₽</div>
+              </div>
+              <div class="td">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
+                  <div class="salesman-box__name">ЮMoney</div>
+                </div>
+              </div>
+              <div class="td td-status">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
+                  <div class="salesman-box__name">ЮMoney</div>
+                </div>
+                <div class="status-order status-order-error">
+                  <div class="status-order__icon"><img src="img/status2.svg" alt=""></div>
+                  <p>Ошибка</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tr">
+              <div class="td">
+                <p>6 июня, 2022 / 13:12</p>
+              </div>
+              <div class="td">
+                <p>#554424653</p>
+              </div>
+              <div class="td">
+                <div class="price">22 000.03 ₽</div>
+              </div>
+              <div class="td">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
+                  <div class="salesman-box__name">QIWI</div>
+                </div>
+              </div>
+              <div class="td td-status">
+                <div class="salesman-box">
+                  <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
+                  <div class="salesman-box__name">QIWI</div>
+                </div>
+                <div class="status-order status-order-wait">
+                  <div class="status-order__icon"><img src="img/status3.svg" alt=""></div>
+                  <p>В ожидании</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-md btn-border btn-toggle">Показать еще</a>
+      </div>
+    </section>
   </div>
 
   <footer>
@@ -300,9 +351,89 @@
   </div>
 </div>
 
+<div class="modal__div" id="modal2">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Вывод средств</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Способ вывода средств</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">
+              <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+              <p>Банковская карта</p>
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Qiwi </span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">ЮMoney</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Банковская карта</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Номер карты</p>
+          </div>
+          <label>
+            <input type="text" value="4234 2224 5423 5356" name="number_card" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сумма</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+
+        <div class="form-row total-sum">
+          <div class="total-sum-val">
+            <p>Итого к получению:</p>
+            <span>710 ₽</span>
+          </div>
+
+          <div class="percent">
+            <p>Комиссия: </p>
+            <span>10 ₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-md">Отмена</a>
+          <button type="submit" class="btn btn-white btn-md">Вывести деньги</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>

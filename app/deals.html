@@ -142,72 +142,161 @@
 
   <div class="content">
 
-    <section class="settings-page page">
+    <section class="ads-section deals-section">
       <div class="container">
-        <div class="page-wrapper">
-        <h1>Смена пароля</h1>
-        <div class="registration-box">
-          <div class="registration-box__head">
-            <h2>Пароль</h2>
+        <h1>Мои сделки</h1>
+
+        <div class="tabs">
+          <ul class="tabs__caption my-ul">
+            <li class="active">
+              <p>Продажи</p>
+              <span>2</span>
+            </li>
+            <li>
+              <p>Покупки</p>
+              <span>1</span>
+            </li>
+          </ul>
+          <div class="tabs__content active">
+
+            <div class="table table-deals">
+              <div class="thead">
+                <div class="tr">
+                  <div class="td">Дата</div>
+                  <div class="td">Заказ</div>
+                  <div class="td">Описание</div>
+                  <div class="td">Статус</div>
+                  <div class="td">Сумма</div>
+                  <div class="td"></div>
+                </div>
+              </div>
+
+              <div class="tbody">
+                <div class="tr">
+                  <div class="td">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </div>
+                  <div class="td">
+                    <p>#DGSDVFE25t </p>
+                  </div>
+                  <div class="td">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </div>
+                  <div class="td td-status">
+                    <div class="status-order status-order-off">
+                      <div class="status-order-dot"></div>
+                      <p>Закрыт</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div class="price">22 000.03 ₽</div>
+                  </div>
+                  <div class="td td-settings">
+                    <div class="dropdown dropdown-order">
+                      <div class="dropdown-toggle dropdown-toggle-dots">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots"></use>
+                        </svg>
+                      </div>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-menu__link">Редактировать</a>
+                        <a href="#" class="dropdown-menu__link">Снять с публикации</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </div>
+                  <div class="td">
+                    <p>#DGSDVFE25t </p>
+                  </div>
+                  <div class="td">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </div>
+                  <div class="td td-status">
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div class="price">22 000.03 ₽</div>
+                  </div>
+                  <div class="td td-settings">
+                    <div class="dropdown dropdown-order">
+                      <div class="dropdown-toggle dropdown-toggle-dots">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots"></use>
+                        </svg>
+                      </div>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-menu__link">Редактировать</a>
+                        <a href="#" class="dropdown-menu__link">Снять с публикации</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-md btn-border btn-toggle">Показать еще</a>
+
           </div>
-          <form method="post" class="form form-password">
-            <div class="registration-box__body">
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Текущий пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
-                  и одну заглавную букву
+          <div class="tabs__content">
+            <div class="table table-deals table-buy">
+              <div class="thead">
+                <div class="tr">
+                  <div class="td">Дата</div>
+                  <div class="td">Заказ</div>
+                  <div class="td">Описание</div>
+                  <div class="td">Продавец</div>
+                  <div class="td">Статус</div>
+                  <div class="td">Сумма</div>
                 </div>
               </div>
 
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Повторите новый пароль</p>
+              <div class="tbody">
+                <div class="tr">
+                  <div class="td">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </div>
+                  <div class="td">
+                    <p>#DGSDVFE25t </p>
+                  </div>
+                  <div class="td">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </div>
+                  <div class="td td-salesman">
+                    <div class="salesman-box">
+                      <div class="salesman-box__photo"><img src="img/photo1.jpeg" alt="">
+                        <div class="status status-off"></div>
+                      </div>
+                      <div class="salesman-box__name">Jane Cooper</div>
+                    </div>
+
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </div>
+                  <div class="td td-status">
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div class="price">22 000.03 ₽</div>
+                  </div>
                 </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
               </div>
             </div>
-
-            <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Сохранить изменения</button>
-            </div>
-          </form>
-        </div>
+          </div>
         </div>
       </div>
     </section>
-
   </div>
 
   <footer>
@@ -302,7 +391,6 @@
 
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>

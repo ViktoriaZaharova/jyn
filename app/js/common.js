@@ -15,19 +15,19 @@ $('.btn-view-password').on('click', function (e) {
 // input search
 $('.form-search input').on('keyup change', function() {
     if (this.value.length > 0) {
-        $('.form-search').addClass('active');
-        $('.search-result').fadeIn();
+        $(this).parents('.form-search').addClass('active');
+        $(this).parents('.search-wrapper').find('.search-result').fadeIn();
     } else {
-        $('.search-result').fadeOut();
-        $('.form-search').removeClass('active');
+        $(this).parents('.search-wrapper').find('.search-result').fadeOut();
+        $(this).parents('.form-search').removeClass('active');
     }
 });
 
 $('.clear-search').on('click', function (e) {
     e.preventDefault();
-    $('.form-search').removeClass('active');
-    $('.form-search input').val('');
-    $('.search-result').fadeOut();
+    $(this).parents('.form-search').removeClass('active');
+    $(this).parents('.form-search').find('input').val('');
+    $(this).parents().find('.search-result').fadeOut();
 });
 
 $('.btn-burger').on('click', function () {

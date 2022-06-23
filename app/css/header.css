@@ -27,7 +27,8 @@ header {
   margin: 0 auto 0 0; }
 
 .form-search {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .form-search input {
     height: 40px;
     background: #1C1C1C;

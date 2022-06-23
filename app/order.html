@@ -142,68 +142,115 @@
 
   <div class="content">
 
-    <section class="settings-page page">
+    <section class="order-section">
       <div class="container">
-        <div class="page-wrapper">
-        <h1>Смена пароля</h1>
-        <div class="registration-box">
-          <div class="registration-box__head">
-            <h2>Пароль</h2>
+        <h1>Оформление заказа</h1>
+
+        <div class="w-100">
+          <div class="row">
+            <div class="col-6 mb-16">
+              <div class="registration-box order-box">
+                <div class="registration-box__head">
+                  <h2>Подробности</h2>
+                </div>
+                <form method="post" class="form">
+                  <div class="registration-box__body">
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Описание</p>
+                      </div>
+                      <div class="box-text description-text">
+                        <p>84 уровень батл пасса 13 сезона. Все персонажи открыты
+                          137900 жетонов легенд.
+                          Вся информация находится в видео
+                          Ссылка
+                          https://www.youtube.com/</p>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Способ вывода средств</p>
+                      </div>
+                      <div class="dropdown dropdown-select">
+                        <div class="dropdown-toggle">
+                          <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+                          <p>Банковская карта</p>
+                          <div class="dropdown-toggle__icon"></div>
+                        </div>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">Qiwi </span>
+                          </a>
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">ЮMoney</span>
+                          </a>
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">Банковская карта</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row total-sum">
+                      <div class="total-sum-val">
+                        <p>Итого к получению:</p>
+                        <span>410 ₽</span>
+                      </div>
+
+                      <div class="percent">
+                        <p>Комиссия: </p>
+                        <span>10 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <button type="submit" class="btn btn-accent btn-lg">Оплатить 410 ₽</button>
+
+                    <div class="attention-text">
+                      <p>Продавец не сможет получить оплату до тех пор, пока вы не подтвердите выполнение им всех обязательств.</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-4 mb-16">
+              <div class="registration-box order-box chat-box">
+                <div class="registration-box__head">
+                  <h2>Чат</h2>
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Leslie Alexander</div>
+                  </div>
+                </div>
+                <form method="post" class="form form-chat">
+                  <div class="registration-box__body">
+                    <div class="text-info">
+                      <p>Задайте продавцу вопрос</p>
+                    </div>
+
+                    <div class="quote-box">
+                      
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <label class="message-input">
+                      <input type="text" name="chat" placeholder="Написать...">
+                    </label>
+                    
+                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <form method="post" class="form form-password">
-            <div class="registration-box__body">
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Текущий пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
-                  и одну заглавную букву
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Повторите новый пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#view"></use>
-                    </svg>
-                  </a>
-                </label>
-              </div>
-            </div>
-
-            <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Сохранить изменения</button>
-            </div>
-          </form>
-        </div>
         </div>
       </div>
     </section>
@@ -300,9 +347,89 @@
   </div>
 </div>
 
+<div class="modal__div" id="modal2">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Вывод средств</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Способ вывода средств</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">
+              <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+              <p>Банковская карта</p>
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Qiwi </span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">ЮMoney</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Банковская карта</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Номер карты</p>
+          </div>
+          <label>
+            <input type="text" value="4234 2224 5423 5356" name="number_card" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сумма</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+
+        <div class="form-row total-sum">
+          <div class="total-sum-val">
+            <p>Итого к получению:</p>
+            <span>710 ₽</span>
+          </div>
+
+          <div class="percent">
+            <p>Комиссия: </p>
+            <span>10 ₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-md">Отмена</a>
+          <button type="submit" class="btn btn-white btn-md">Вывести деньги</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>

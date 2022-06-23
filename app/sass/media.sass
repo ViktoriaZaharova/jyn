@@ -16,6 +16,110 @@
   .dropdown-cabinet
     margin: 0 15px
 
+  .td:nth-child(2)
+    width: 53%
+
+  .td:nth-child(3), .td:nth-child(4)
+    width: 20%
+    padding: 26px 10px
+
+  .table-deals
+    .thead
+      display: none
+    .td
+      &:first-child, &:nth-child(2)
+        width: 50%
+        color: #9D9D9D
+        font-size: 14px
+        padding: 16px 16px 8px
+      &:nth-child(2)
+        padding: 16px 16px 8px
+        text-align: right
+        a
+          margin-left: auto
+          color: #9D9D9D
+      &:nth-child(3)
+        width: 100%
+        padding: 0 16px 8px
+      &:nth-child(5)
+        padding: 0 16px 16px
+        width: 100%
+      &:nth-child(5).td-status
+        width: 100%
+      &:nth-child(4).td-status
+        border-top: 1px solid #282828
+        width: 100%
+        order: 1
+        padding: 16px
+    .td-settings
+      position: absolute
+      bottom: 20px
+      right: 16px
+      padding: 0
+      width: fit-content
+
+  .tr
+    position: relative
+
+  .table-buy
+    .td
+      &:nth-child(4)
+        border-top: 1px solid #282828
+        width: 100%
+        order: 1
+        padding: 16px
+        display: flex
+        align-items: center
+
+      &:nth-child(5).td-status
+        display: none
+
+
+      &:last-child
+        width: 100%
+        padding: 0 16px 16px
+
+  .td-salesman .status-order
+    display: flex
+    margin-left: 8px
+
+  .table-history
+    .td
+      width: 100%
+      &:first-child, &:nth-child(2)
+        width: 50%
+        font-size: 14px
+        padding: 16px 16px 8px
+        color: #9D9D9D
+      &:nth-child(2)
+        text-align: right
+      &:nth-child(3)
+        padding: 0 16px 16px
+
+      &:nth-child(4)
+        display: none
+      &:last-child
+        padding: 16px
+        border-top: 1px solid #282828
+    .td-status
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      .salesman-box
+        display: flex
+        margin: 0 8px 8px 0
+    .thead
+      display: none
+
+  .history
+    margin: 40px 0 42px
+
+  .col-4, .col-6
+    width: 100%
+
+  .order-box
+    max-width: none
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .search-wrapper
@@ -48,7 +152,62 @@
   .modal__div, .page-wrapper
     max-width: 500px
 
+  .col-3
+    width: 50%
 
+  .games
+    margin: 24px 0 0
+    h2
+      margin: 0 0 24px
+
+  .games-line
+    margin: 0 0 32px
+
+  .ads-section
+    margin: 0 0 26px
+
+  .thead
+    display: none
+
+  .tbody .td
+    padding: 16px
+
+  .table
+    margin: 24px 0 0
+
+  .table-ads
+
+    .td
+      padding: 16px
+      &:first-child
+        width: 10%
+      &:nth-child(2)
+        width: 70%
+      &:nth-child(3)
+        order: 1
+        width: 100%
+        padding: 16px
+        border-top: 1px solid #282828
+
+  .tr
+    &:before
+      display: block
+      content: attr(data-table)
+      margin: 0 0 8px
+      width: 100%
+      color: #9D9D9D
+      font-size: 14px
+      padding: 16px 16px 0
+
+  .table-deals
+    .tr:before
+      display: none
+
+  .table-deals .td-settings
+    padding: 0
+
+  .form-chat .registration-box__body
+    padding: 30px 16px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
@@ -84,11 +243,28 @@
   .user-menu, .dropdown-cabinet
     display: none
 
+  .col-3
+    width: 100%
+
+  .finance-box
+    flex-direction: column
+    align-items: flex-start
+    padding: 24px 0
+    h4
+      padding: 0 16px
+      margin: 0 0 8px
+    &__val
+      width: 100%
+      padding: 0 16px 24px
+      margin: 0
+      border-bottom: 1px solid #282828
+    .btn
+      margin: 24px auto 0
 
 
 @media only screen and (max-width: 576px)
   header
-    margin: 0
+    margin: 0 0 24px
 
   .container
     padding: 0 16px
@@ -97,6 +273,8 @@
     display: none
 
   .wrapper-registration
+    header
+      margin: 0
     .registration-box
       &__head
         padding: 0
@@ -120,6 +298,9 @@
 
   .page
     padding: 24px 0 0
+
+  h1
+    margin: 0 0 20px
 
   h2
     font-size: 22px
@@ -159,6 +340,58 @@
     li
       padding: 0 0 12px
       margin: 0 28px 0 0
+
+  .add-photo
+    display: none
+
+  .link-delete
+    margin: 0
+    height: 40px
+    border: 1px solid #fff
+      radius: 69px
+    padding: 7px 24px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .form-row-profile .user-photo
+    margin: 0 16px 0 0
+    width: 56px
+    height: 56px
+    min-width: 56px
+
+  .mb-40
+    margin-bottom: 24px
+
+  .table-ads .td
+    width: 100%
+    &:first-child
+      display: none
+    &:nth-child(2)
+      width: 100%
+      padding: 0 16px
+    &:nth-child(4)
+      width: 100%
+      margin: 8px 0 0
+      padding: 0 16px 16px
+
+  .btn-toggle
+    margin: 16px auto 0
+
+  .chat-box
+    h2
+      display: none
+
+  .form-chat
+    .registration-box__body
+      height: 324px
+
+  .title-wrapper
+    margin: 0 0 24px
+    h1
+      margin: 0 0 8px
+      width: 100%
+
 
 @media only screen and (max-width: 480px)
   /**/

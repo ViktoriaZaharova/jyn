@@ -28,7 +28,36 @@
 
 <body>
 
-<div class="wrapper wrapper-registration">
+<div class="wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <div class="user-photo"></div>
+      <div class="user-name">Jane Cooper</div>
+    </div>
+    <div class="mobile-menu__body">
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Мои финансы</span>
+        <span class="money-value">3 245.50  ₽</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Настройки</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Центр помощи</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Выход</span>
+      </a>
+    </div>
+    <div class="mobile-menu__footer">
+      <a href="#modal1" class="btn btn-white btn-lg open_modal">Подать объявление</a>
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <a href="/" class="logo">JYN</a>
@@ -66,69 +95,388 @@
         </div>
       </div>
 
-      <div class="btn-group">
-        <a href="entrance.html" class="btn btn-border btn-md">Войти</a>
-        <a href="registration.html" class="btn btn-white btn-md">Зарегистрироваться</a>
+      <div class="user-menu">
+        <a href="#" class="user-menu__link color-white font-500">Мои сделки</a>
       </div>
 
-      <div class="btn-burger"></div>
+      <div class="dropdown dropdown-cabinet">
+        <div class="user-avatar dropdown-toggle"></div>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu__head">
+            <div class="user-photo"></div>
+            <div class="user-name">Jane Cooper</div>
+          </div>
+          <div class="dropdown-menu__body">
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Мои финансы</span>
+              <span class="money-value">3 245.50  ₽</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Настройки</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Центр помощи</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Выход</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#modal1" class="btn btn-white btn-md open_modal">Подать объявление</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
 
   <div class="content">
 
-    <section class="registration-section">
+    <section class="popular-games">
       <div class="container">
-        <div class="registration-box">
-          <div class="registration-box__head">
-            <h2>Регистрация</h2>
+        <h1>Популярные игры</h1>
+
+        <div class="w-100">
+          <div class="row">
+            <div class="col-3 mb-16">
+              <div class="popular-game-card">
+                <a href="#" class="popular-game-card__img"><img src="img/game1.jpeg" alt=""></a>
+                <div class="popular-game-card__body">
+                  <a href="#" class="popular-game-card__logo"><img src="img/game-logo1.svg" alt=""></a>
+                  <a href="#" class="popular-game-card__title">DOTA 2</a>
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">Аккаунты</a></li>
+                    <li><a href="#">Буст MMR</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 mb-16">
+              <div class="popular-game-card">
+                <a href="#" class="popular-game-card__img"><img src="img/game2.jpeg" alt=""></a>
+                <div class="popular-game-card__body">
+                  <a href="#" class="popular-game-card__logo"><img src="img/game-logo2.svg" alt=""></a>
+                  <a href="#" class="popular-game-card__title">GTA SAMP</a>
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">Аккаунты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 mb-16">
+              <div class="popular-game-card">
+                <a href="#" class="popular-game-card__img"><img src="img/game3.jpeg" alt=""></a>
+                <div class="popular-game-card__body">
+                  <a href="#" class="popular-game-card__logo"><img src="img/game-logo3.svg" alt=""></a>
+                  <a href="#" class="popular-game-card__title">League of Legends</a>
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">Аккаунты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <form method="post" class="form">
-            <div class="registration-box__body">
-
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Придумайте логин</p>
-                </div>
-                <label>
-                  <input type="text" value="Nick21" name="login" required>
-                </label>
-              </div>
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Введите Email</p>
-                </div>
-                <label>
-                  <input type="text" name="mail" required>
-                </label>
-              </div>
-              <div class="form-row">
-                <div class="input-title">
-                  <p>Придумайте пароль</p>
-                </div>
-                <label>
-                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
-                  <a href="#" class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></a>
-                </label>
-                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
-                  и одну заглавную букву
-                </div>
-              </div>
-            </div>
-
-            <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Зарегистрироваться</button>
-
-              <div class="box-text">
-                <p>Уже есть аккаунт?</p>
-                <a href="entrance.html" class="link color-accent">Войти</a>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>
 
+    <section class="games">
+      <div class="container">
+        <h2>Остальные игры</h2>
+
+        <div class="w-100 games-line">
+          <div class="row">
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Aion</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Боевой пропуск</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Albion Online</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">APB: Reloaded</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Among Us</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Anomaly Zone</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">PvE</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">ARK: Survival Evolved</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Боевой пропуск</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 games-line">
+          <div class="row">
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Back 4 Blood</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Battle.net</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Biomutant</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Bless Unleashed</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Blood And Soul</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Boom Beach</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Blade & Soul</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Broken Ranks</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 games-line">
+          <div class="row">
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Cabal Online</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Call of Duty</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">CarX Drift Racing</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Clash Royale</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Clash of Clans</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Conqueror's Blade</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Предметы</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Counter-Strike: GO</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Crossout</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Буст MMR</a></li>
+                  <li><a href="#">Кинары</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 mb-40">
+              <div class="game-item">
+                <a href="#" class="game-item__title">Cyberpunk 2077</a>
+                <ul class="list-tags my-ul">
+                  <li><a href="#">Аккаунты</a></li>
+                  <li><a href="#">Ключи</a></li>
+                  <li><a href="#">Услуги</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <footer>
@@ -151,6 +499,78 @@
     </div>
   </footer>
 </div>
+
+
+<div class="modal__div" id="modal1">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Подать объявление</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сервер</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">PC
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Настройки</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Описание</p>
+          </div>
+          <label>
+            <textarea name="message"></textarea>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Количество</p>
+          </div>
+          <label>
+            <input type="text" value="12" class="input-password" name="value" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Цена</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-lg">Отмена</a>
+          <button type="submit" class="btn btn-white btn-lg">Опубликовать</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>

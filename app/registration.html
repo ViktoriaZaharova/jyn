@@ -79,41 +79,49 @@
 
     <section class="registration-section">
       <div class="container">
-
         <div class="registration-box">
           <div class="registration-box__head">
-            <h2>Войти</h2>
+            <h2>Регистрация</h2>
           </div>
           <form method="post" class="form">
             <div class="registration-box__body">
 
               <div class="form-row">
                 <div class="input-title">
-                  <p>Введите email или логин</p>
+                  <p>Придумайте логин</p>
                 </div>
                 <label>
-                  <input type="text" name="login" required>
+                  <input type="text" value="Nick21" name="login" required>
                 </label>
               </div>
-
               <div class="form-row">
                 <div class="input-title">
-                  <p>Введите пароль</p>
-                  <a href="password.html" class="link color-accent">Забыли пароль?</a>
+                  <p>Введите Email</p>
                 </div>
                 <label>
-                  <input type="password" value="" class="input-password" name="password" required>
+                  <input type="text" name="mail" required>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="input-title">
+                  <p>Придумайте пароль</p>
+                </div>
+                <label>
+                  <input type="password" value="133434349374216271" class="input-password" name="password" required>
                   <a href="#" class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></a>
                 </label>
+                <div class="input-description">Пароль должен состоять не менее чем из 6 символов и содержать одну цифру
+                  и одну заглавную букву
+                </div>
               </div>
             </div>
 
             <div class="registration-box__footer">
-              <button type="submit" class="btn btn-accent btn-lg">Войти</button>
+              <button type="submit" class="btn btn-accent btn-lg">Зарегистрироваться</button>
 
               <div class="box-text">
-                <p>Нет аккаунта?</p>
-                <a href="registration.html" class="link color-accent">Зарегистрироваться</a>
+                <p>Уже есть аккаунт?</p>
+                <a href="entrance.html" class="link color-accent">Войти</a>
               </div>
             </div>
           </form>
