@@ -759,6 +759,7 @@
   overflow: hidden;
   min-height: 24px;
   line-height: 20px;
+  overflow-wrap: anywhere;
   border: none;
     border-radius: 0;
   resize: none;
