@@ -254,17 +254,19 @@
   border-spacing: 0 10px
   border-collapse: inherit
 
+
 .thead, .tbody
   width: 100%
 
 .thead
   color: #676767
   text-align: left
+  .td
+    background: transparent
   
 .tbody
   font-size: 16px
   .tr
-    background: #1C1C1C
     border-radius: 16px
     margin: 0 0 8px
     &:last-child
@@ -280,10 +282,16 @@
 .td
   padding: 16px 23px
   vertical-align: middle
+  background: #1C1C1C
   &:first-child
     border-radius: 16px 0 0 16px
+    -moz-border-radius: 16px 0 0 16px
+    -webkit-border-radius: 16px 0 0 16px
   &:last-child
     border-radius: 0 16px 16px 0
+    -moz-border-radius: 0 16px 16px 0
+    -webkit-border-radius: 0 16px 16px 0
+
 
 //.td-server
 //  width: 7%
@@ -645,7 +653,7 @@
 
 .form-chat
   .message-input
-    margin: 0 auto 0 0
+    margin: 0 auto 7px 0
   .add-quote
     width: fit-content
     margin: 0
@@ -677,7 +685,7 @@
       padding: 16px 32px
       margin: auto 0 0
       display: flex
-      align-items: center
+      align-items: flex-end
       flex-wrap: wrap
       width: calc(100% + 5px)
 
@@ -685,15 +693,21 @@
 .message-input
   width: calc(100% - 130px - 36px)
   padding: 0 0 0 16px
-  input
+  input, textarea
     padding: 0
     width: 100%
     height: auto
-
     font-size: 16px
     background: transparent
     border: none
       radius: 0
+  textarea
+    resize: none
+    display: flex
+    align-items: center
+    height: 24px
+
+
 
 .error-box
   display: flex
@@ -855,11 +869,14 @@
 
 .file
   width: 20px
-  height: 20px
   @include d-flex
   cursor: pointer
   stroke: #676767
   fill: none
+  margin: 0 0 10px
+  .file-icon
+    width: 20px
+    height: 20px
 
 .inp-file
   display: none

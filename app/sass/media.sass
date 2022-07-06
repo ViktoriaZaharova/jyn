@@ -23,12 +23,22 @@
     padding: 8px 16px
 
   .td
+    background: transparent
     padding: 8px 16px
+    &:first-child
+      border-radius: 0
+    &:last-child
+      border-radius: 0
+
 
   .tr
     display: flex
     align-items: center
     flex-wrap: wrap
+    border-radius: 16px
+    background: #1C1C1C
+
+
 
   .td-description
     width: 50%

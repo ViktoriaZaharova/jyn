@@ -302,11 +302,12 @@
 .thead {
   color: #676767;
   text-align: left; }
+  .thead .td {
+    background: transparent; }
 
 .tbody {
   font-size: 16px; }
   .tbody .tr {
-    background: #1C1C1C;
     border-radius: 16px;
     margin: 0 0 8px; }
     .tbody .tr:last-child {
@@ -320,11 +321,16 @@
 
 .td {
   padding: 16px 23px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background: #1C1C1C; }
   .td:first-child {
-    border-radius: 16px 0 0 16px; }
+    border-radius: 16px 0 0 16px;
+    -moz-border-radius: 16px 0 0 16px;
+    -webkit-border-radius: 16px 0 0 16px; }
   .td:last-child {
-    border-radius: 0 16px 16px 0; }
+    border-radius: 0 16px 16px 0;
+    -moz-border-radius: 0 16px 16px 0;
+    -webkit-border-radius: 0 16px 16px 0; }
 
 .td-salesman {
   width: 15%; }
@@ -675,7 +681,7 @@
   overflow: hidden; }
 
 .form-chat .message-input {
-  margin: 0 auto 0 0; }
+  margin: 0 auto 7px 0; }
 
 .form-chat .add-quote {
   width: -webkit-fit-content;
@@ -720,9 +726,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: calc(100% + 5px); }
@@ -730,7 +736,7 @@
 .message-input {
   width: calc(100% - 130px - 36px);
   padding: 0 0 0 16px; }
-  .message-input input {
+  .message-input input, .message-input textarea {
     padding: 0;
     width: 100%;
     height: auto;
@@ -738,6 +744,15 @@
     background: transparent;
     border: none;
       border-radius: 0; }
+  .message-input textarea {
+    resize: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 24px; }
 
 .error-box {
   display: -webkit-box;
@@ -944,7 +959,6 @@
 
 .file {
   width: 20px;
-  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,7 +970,11 @@
           justify-content: center;
   cursor: pointer;
   stroke: #676767;
-  fill: none; }
+  fill: none;
+  margin: 0 0 10px; }
+  .file .file-icon {
+    width: 20px;
+    height: 20px; }
 
 .inp-file {
   display: none; }

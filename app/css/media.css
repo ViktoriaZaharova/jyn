@@ -15,7 +15,12 @@
   .tbody .td {
     padding: 8px 16px; }
   .td {
+    background: transparent;
     padding: 8px 16px; }
+    .td:first-child {
+      border-radius: 0; }
+    .td:last-child {
+      border-radius: 0; }
   .tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,7 +29,9 @@
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    border-radius: 16px;
+    background: #1C1C1C; }
   .td-description {
     width: 50%; }
   .td-salesman, .td-price {
