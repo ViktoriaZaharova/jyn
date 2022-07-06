@@ -681,7 +681,7 @@
   overflow: hidden; }
 
 .form-chat .message-input {
-  margin: 0 auto 7px 0; }
+  margin: 0 auto 10px 0; }
 
 .form-chat .add-quote {
   width: -webkit-fit-content;
@@ -751,32 +751,8 @@
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-
-.textarea {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  min-height: 24px;
-  line-height: 20px;
-  overflow-wrap: anywhere;
-  border: none;
-    border-radius: 0;
-  resize: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none; }
-  .textarea:hover, .textarea:focus {
-    border: none;
-      border-radius: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .textarea[contenteditable]:empty::before {
-    content: "Написать...";
-    color: #676767; }
+            align-items: center;
+    overflow-wrap: anywhere; }
 
 .error-box {
   display: -webkit-box;
