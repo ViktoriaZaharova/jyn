@@ -23,6 +23,16 @@ $('.form-search input').on('keyup change', function() {
     }
 });
 
+$('.input-price').on('keyup change', function() {
+    if (this.value.length > 0) {
+        $(this).parents('.dropdown-price').addClass("active");
+        // $(this).parents('.search-wrapper').find('.search-result').fadeIn();
+    } else {
+        $(this).parents('.dropdown-price').removeClass("active");
+        // $(this).parents('.form-search').removeClass('active');
+    }
+});
+
 $('.clear-search').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.form-search').removeClass('active');

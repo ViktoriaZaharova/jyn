@@ -158,107 +158,137 @@
             </li>
           </ul>
           <div class="tabs__content active">
-            <form method="post" class="form-search form-search-no-active">
-              <label>
-                <input type="text" placeholder="Поиск по описанию" name="search" required>
-                <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
-              </label>
-              <button type="submit" class="btn-search">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-              </button>
-            </form>
+            <div class="filter-wrapper">
+              <form method="post" class="form-search form-search-no-active">
+                <label>
+                  <input type="text" placeholder="Поиск по описанию" name="search" required>
+                  <span class="clear-search"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#close"></use></svg></span>
+                </label>
+                <button type="submit" class="btn-search">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
 
-            <div class="table table-ads">
-              <div class="thead">
-                <div class="tr">
-                  <div class="td">Сервер</div>
-                  <div class="td">Описание</div>
-                  <div class="td">Продавец</div>
-                  <div class="td">Цена</div>
+              <div class="dropdown dropdown-price">
+                <div class="dropdown-toggle">Цена
+                  <div class="dropdown-toggle__icon"></div>
+                  <div class="btn-clear"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
                 </div>
-              </div>
+                <div class="dropdown-menu">
+                  <div class="input-group">
+                    <label>
+                      <input type="text" placeholder="от" class="input-price">
+                      <span class="input-subtext">₽</span>
+                    </label>
 
-              <div class="tbody">
-                <div class="tr" data-table="Сервер · PC">
-                  <div class="td">
-                    <p>PC</p>
+                    <label>
+                      <input type="text" placeholder="до" class="input-price">
+                      <span class="input-subtext">₽</span>
+                    </label>
                   </div>
-                  <div class="td">
-                    <a href="#" class="ads-title">Личный аккаунт 3150 ммр | 33 уровень доты | 40+ Жетонов </a>
-                  </div>
-                  <div class="td">
-                    <div class="salesman-box">
-                      <div class="salesman-box__photo"><img src="img/photo1.jpeg" alt="">
-                      <div class="status status-off"></div>
-                      </div>
-                      <div class="salesman-box__name">Jane Cooper</div>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div class="price">1 000.50 ₽</div>
-                  </div>
-                </div>
-                <div class="tr" data-table="Сервер · PC">
-                  <div class="td">
-                    <p>PC</p>
-                  </div>
-                  <div class="td">
-                    <a href="#" class="ads-title">10 Full(100%) 9500 гемов 122 лвл дам без привязки в суперсел или перевежу на вашу почту</a>
-                  </div>
-                  <div class="td">
-                    <div class="salesman-box">
-                      <div class="salesman-box__photo"><img src="img/photo2.jpeg" alt="">
-                        <div class="status status-on"></div>
-                      </div>
-                      <div class="salesman-box__name">Jenny Wilson</div>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div class="price">1 000.50 ₽</div>
-                  </div>
-                </div>
-                <div class="tr" data-table="Сервер · PC">
-                  <div class="td">
-                    <p>PC</p>
-                  </div>
-                  <div class="td">
-                    <a href="#" class="ads-title">СКИДКА✅11ТХ⭐️9ДС⭐️КУЧА СКИНОВ⭐️5 СТРОИТЕЛЕЙ⭐️45/45/7⭐️4000+гемов⭐️#9GPJ2CGQ9⭐️ЧИТАЙ ОПИСАНИЕ!, 11 TH</a>
-                  </div>
-                  <div class="td">
-                    <div class="salesman-box">
-                      <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
-                        <div class="status status-off"></div>
-                      </div>
-                      <div class="salesman-box__name">Leslie Alexander</div>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div class="price">3000 ₽</div>
-                  </div>
-                </div>
-                <div class="tr" data-table="Сервер · PC">
-                  <div class="td">
-                    <p>PC</p>
-                  </div>
-                  <div class="td">
-                    <a href="#" class="ads-title">Личный аккаунт 3150 ммр | 33 уровень доты | 40+ Жетонов </a>
-                  </div>
-                  <div class="td">
-                    <div class="salesman-box">
-                      <div class="salesman-box__photo"><img src="img/photo2.jpeg" alt="">
-                        <div class="status status-on"></div>
-                      </div>
-                      <div class="salesman-box__name">Jenny Wilson</div>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div class="price">1 000.50 ₽</div>
-                  </div>
+
+                  <a href="#" class="link-replace">
+                    <span class="link-replace__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#replace"></use></svg></span>
+                    <span class="link-replace__text">Сбросить</span>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <table class="table table-ads">
+              <thead class="thead">
+              <tr class="tr">
+                <td class="td td-server">Сервер</td>
+                <td class="td td-description">Описание</td>
+                <td class="td td-salesman">Продавец</td>
+                <td class="td td-price">Цена</td>
+              </tr>
+              </thead>
+
+              <tbody class="tbody">
+              <tr class="tr" data-table="Сервер · PC">
+                <td class="td td-server">
+                  <p>PC</p>
+                </td>
+                <td class="td td-description">
+                  <a href="#" class="ads-title">Личный аккаунт 3150 ммр | 33 уровень доты | 40+ Жетонов </a>
+                </td>
+                <td class="td td-salesman">
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo1.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Jane Cooper</div>
+                  </div>
+                </td>
+                <td class="td td-price">
+                  <div class="price">1 000.50 ₽</div>
+                </td>
+              </tr>
+              <tr class="tr" data-table="Сервер · PC">
+                <td class="td td-server">
+                  <p>PC</p>
+                </td>
+                <td class="td td-description">
+                  <a href="#" class="ads-title">10 Full(100%) 9500 гемов 122 лвл дам без привязки в суперсел или
+                    перевежу на вашу почту</a>
+                </td>
+                <td class="td td-salesman">
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo2.jpeg" alt="">
+                      <div class="status status-on"></div>
+                    </div>
+                    <div class="salesman-box__name">Jenny Wilson</div>
+                  </div>
+                </td>
+                <td class="td td-price">
+                  <div class="price">1 000.50 ₽</div>
+                </td>
+              </tr>
+              <tr class="tr" data-table="Сервер · PC">
+                <td class="td td-server">
+                  <p>PC</p>
+                </td>
+                <td class="td td-description">
+                  <a href="#" class="ads-title">СКИДКА✅11ТХ⭐️9ДС⭐️КУЧА СКИНОВ⭐️5
+                    СТРОИТЕЛЕЙ⭐️45/45/7⭐️4000+гемов⭐️#9GPJ2CGQ9⭐️ЧИТАЙ ОПИСАНИЕ!, 11 TH</a>
+                </td>
+                <td class="td td-salesman">
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Leslie Alexander</div>
+                  </div>
+                </td>
+                <td class="td td-price">
+                  <div class="price">3000 ₽</div>
+                </td>
+              </tr>
+              <tr class="tr" data-table="Сервер · PC">
+                <td class="td td-server">
+                  <p>PC</p>
+                </td>
+                <td class="td td-description">
+                  <a href="#" class="ads-title">Личный аккаунт 3150 ммр | 33 уровень доты | 40+ Жетонов </a>
+                </td>
+                <td class="td td-salesman">
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo2.jpeg" alt="">
+                      <div class="status status-on"></div>
+                    </div>
+                    <div class="salesman-box__name">Jenny Wilson</div>
+                  </div>
+                </td>
+                <td class="td td-price">
+                  <div class="price">1 000.50 ₽</div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
 
             <a href="#" class="btn btn-md btn-border btn-toggle">Показать еще</a>
 
@@ -267,7 +297,8 @@
             <form method="post" class="form-search form-search-no-active active">
               <label>
                 <input type="text" value="Dota236rgsegssegsegs" name="search" required>
-                <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+                <span class="clear-search"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#close"></use></svg></span>
               </label>
               <button type="submit" class="btn-search">
                 <svg class="svg-icon">
@@ -288,7 +319,11 @@
   <footer>
     <div class="container">
       <div class="copyright">© 2022 Jyn.ru</div>
-      <a href="#" class="link color-grey" target="_blank">Центр помощи</a>
+      <ul class="footer-list my-ul">
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
+      </ul>
+
 
       <ul class="list-social my-ul">
         <li><a href="#">

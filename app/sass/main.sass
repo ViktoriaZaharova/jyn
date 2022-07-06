@@ -11,9 +11,11 @@
 .registration-box
   max-width: 724px
   width: 100%
-  margin: 0 auto
+  margin: 0 auto 30px
   background: #1C1C1C
   border-radius: 22px
+  &:last-child
+    margin: 0 auto
   &__head
     width: 100%
     display: flex
@@ -37,11 +39,17 @@
         margin-left: 8px
   &__body
     padding: 32px 40px 40px
+    .box-text
+      line-height: 24px
   form
     button
       max-width: 406px
       width: 100%
       margin: 0 auto
+
+.btn-confirm
+  max-width: 406px
+  width: 100%
 
 .form-row-attention
   display: flex
@@ -243,13 +251,16 @@
   width: 100%
   margin: 16px 0 0
   font-size: 14px
+  border-spacing: 0 10px
+  border-collapse: inherit
 
 .thead, .tbody
   width: 100%
 
 .thead
   color: #676767
-
+  text-align: left
+  
 .tbody
   font-size: 16px
   .tr
@@ -263,21 +274,38 @@
 
 
 .tr
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+  vertical-align: middle
   width: 100%
 
 .td
   padding: 16px 23px
+  vertical-align: middle
   &:first-child
-    width: 7%
-  &:nth-child(2)
-    width: 59%
-  &:nth-child(3)
-    width: 17%
-  &:nth-child(4)
-    width: 17%
+    border-radius: 16px 0 0 16px
+  &:last-child
+    border-radius: 0 16px 16px 0
+
+//.td-server
+//  width: 7%
+//
+//.td-date
+//  width: 7%
+//
+//.td-order
+//  width: 59%
+//
+//.td-description
+//  width: 59%
+//
+//.td-status
+//  width: 14%
+//
+.td-salesman
+  width: 15%
+
+.td-price
+  width: 14%
+
 
 .ads-title
   color: #fff
@@ -353,34 +381,148 @@
   &.active
     stroke: #fff
 
-.table-deals
-  .td
-    &:first-child
-      width: 16%
-    &:nth-child(2)
-      width: 14%
-    &:nth-child(3)
-      width: 35%
-    &:nth-child(5)
-      width: 13%
-    &:nth-child(4).td-status
-      width: 15%
-    .td-settings
-      width: 5%
-      padding: 0 24px
+//.table-ads
+//  .td-price
+//    width: 14%
+//  .td-salesman
+//    width: 17%
 
-.table-buy
-  .td
-    &:nth-child(2)
-      width: 13%
-    &:nth-child(3)
-      width: 30%
-    &:nth-child(4)
-      width: 15%
+//.table-deals
+  //.td
+  //  &:first-child
+  //    width: 16%
+  //  &:nth-child(2)
+  //    width: 14%
+  //  &:nth-child(3)
+  //    width: 35%
+  //  &:nth-child(5)
+  //    width: 13%
+  //  &:nth-child(4).td-status
+  //    width: 15%
+  //  .td-settings
+  //    width: 5%
+  //    padding: 0 24px
+  //.td-date
+  //  width: 16%
+  //.td-order
+  //  width: 14%
+  //.td-description
+  //  width: 35%
+  //.td-status
+  //  width: 15%
+  //.td-sum
+  //  width: 13%
+  //.td-settings
+  //  width: 5%
+  //  padding: 0 24px
+
+//.table-buy
+  //.td
+    //&:nth-child(2)
+    //  width: 13%
+    //&:nth-child(3)
+    //  width: 30%
+    //&:nth-child(4)
+    //  width: 15%
+    //&:last-child
+    //  width: 13%
+
+  //.td-order
+  //  width: 13%
+  //
+  //.td-description
+  //  width: 30%
+  //.td-salesman
+  //  width: 15%
+  //.td-status
+  //  width: 13%
+  //.td-sum
+  //  width: 13%
+
+.filter-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.dropdown-price
+  margin: 0 0 0 16px
+  width: fit-content
+  .dropdown-toggle
+    display: flex
+    align-items: center
+    background: #1C1C1C
+    border-radius: 31px
+    padding: 5px 16px
+    height: 40px
+  .dropdown-toggle__icon
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 0 0 8px
+    background: url("../img/arrow-select.svg") no-repeat center
+      size: 100%
+  .dropdown-menu
+    padding: 20px
+    border:
+      radius: 8px
+      bottom: 1px solid #2E2E2E
+    margin: 12px 0 0
+    min-width: 316px
+    left: 0
+    transform: none
+  &.active
+    .dropdown-toggle__icon
+      display: none
+    .btn-clear
+      display: flex
+    .link-replace
+      color: $accent
+    .link-replace__icon
+      stroke: $accent
+
+.btn-clear
+  stroke: #fff
+  width: 16px
+  height: 16px
+  margin: 0 0 0 8px
+  display: none
+  align-items: center
+  justify-content: center
+
+.input-group
+  display: flex
+  align-items: flex-start
+  label
+    width: 134px
+    margin: 0 8px 0 0
     &:last-child
-      width: 13%
-  .td-status
-    width: 13%
+      margin: 0
+  input
+    background: #393939
+    padding: 0 23px 0 16px
+    &:focus
+      border: 1px solid #676767
+
+.link-replace
+  display: flex
+  align-items: center
+  margin: 20px 0 0 auto
+  color: #676767
+  font-size: 14px
+  &.active
+    color: $accent
+    .link-replace__icon
+      stroke: $accent
+  &__icon
+    @include d-flex
+    fill: none
+    stroke: #676767
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 8px 0 0
+
 
 .status-order
   display: flex
@@ -421,7 +563,6 @@
 .td-salesman
   .status-order
     display: none
-
 
 
 /*==========  section deals end  ==========*/
@@ -500,6 +641,7 @@
 .order-box
   max-width: none
   width: 100%
+  overflow: hidden
 
 .form-chat
   .message-input
@@ -511,6 +653,7 @@
     &__body
       height: 375px
       overflow-y: auto
+      width: calc(100% - 6px)
       padding: 30px 32px
       .text-info
         width: 100%
@@ -522,15 +665,26 @@
         text-align: center
         color: #676767
         font-size: 14px
+      &::-webkit-scrollbar
+        width: 6px
+        background: transparent
+        border-radius: 21px
+      &::-webkit-scrollbar-thumb
+        width: 6px
+        border-radius: 21px
+        background: #2E2E2E
     &__footer
       padding: 16px 32px
       margin: auto 0 0
       display: flex
       align-items: center
       flex-wrap: wrap
+      width: calc(100% + 5px)
+
 
 .message-input
-  width: calc(100% - 130px)
+  width: calc(100% - 130px - 36px)
+  padding: 0 0 0 16px
   input
     padding: 0
     width: 100%
@@ -633,5 +787,115 @@
   h1
     margin: 0 16px 0 0
     width: fit-content
+
+.chat-item
+  margin: 0 0 16px
+  width: 100%
+  .date
+    color: #676767
+    font-size: 12px
+    margin: 6px 0 0
+  &:last-child
+    margin: 0
+  &__wrapper
+    background: #282828
+    border-radius: 16px
+    padding: 16px
+  ul
+    padding: 0
+    list-style: none
+  .box-text
+    line-height: 24px
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+    strong
+      display: block
+      font-weight: 500
+
+.status-verification
+  padding: 4px 10px 4px 4px
+  width: fit-content
+  background: #393939
+  border-radius: 39px
+  margin: 0 0 8px
+  .status-order__icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    background: #fff
+    border-radius: 50%
+    @include d-flex
+    fill: none
+    stroke: #14A760
+    padding: 6px
+
+.chat-box-status
+  .registration-box__footer
+    border: none
+
+
+.error-page
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  h1
+    text-align: center
+    line-height: 200px
+    margin: 0 auto
+    font-weight: bold
+    font-size: 260px
+  .subtitle
+    margin: 40px auto
+    font-size: 24px
+    font-weight: bold
+
+.file
+  width: 20px
+  height: 20px
+  @include d-flex
+  cursor: pointer
+  stroke: #676767
+  fill: none
+
+.inp-file
+  display: none
+
+.file-result
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 16px 0 0
+  &__box
+    width: 80px
+    height: 80px
+    overflow: hidden
+    border-radius: 8px
+    position: relative
+    @include d-flex
+    margin: 0 8px 8px 0
+    &:last-child
+      margin: 0 0 8px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.btn-delete-file
+  @include d-flex
+  stroke: #fff
+  top: 2px
+  right: 2px
+  position: absolute
+  border: 1.5px solid #FFFFFF
+    radius: 50%
+  width: 14px
+  height: 14px
+  padding: 1px
+
 
 /*==========  section end  ==========*/

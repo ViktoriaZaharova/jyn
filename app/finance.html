@@ -158,35 +158,35 @@
       <div class="container">
         <h2>История выплат</h2>
 
-        <div class="table table-history">
-          <div class="thead">
-            <div class="tr">
-              <div class="td">Дата</div>
-              <div class="td">Номер выплаты</div>
-              <div class="td">Сумма вывода</div>
-              <div class="td">Метод вывода </div>
-              <div class="td">Статус</div>
-            </div>
-          </div>
+        <table class="table table-history">
+          <thead class="thead">
+            <tr class="tr">
+              <td class="td td-date">Дата</td>
+              <td class="td td-number">Номер выплаты</td>
+              <td class="td td-sum">Сумма вывода</td>
+              <td class="td td-method">Метод вывода </td>
+              <td class="td td-status">Статус</td>
+            </tr>
+          </thead>
 
-          <div class="tbody">
-            <div class="tr">
-              <div class="td">
+          <tbody class="tbody">
+            <tr class="tr">
+              <td class="td td-date">
                 <p>6 июня, 2022 / 13:12</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-number">
                 <p>#554424653</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-sum">
                 <div class="price">22 000.03 ₽</div>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-method">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
                   <div class="salesman-box__name">Банковская карта</div>
                 </div>
-              </div>
-              <div class="td td-status">
+              </td>
+              <td class="td td-status">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
                   <div class="salesman-box__name">Банковская карта</div>
@@ -195,26 +195,26 @@
                   <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
                   <p>Выполнен</p>
                 </div>
-              </div>
-            </div>
+              </td>
+            </tr>
 
-            <div class="tr">
-              <div class="td">
+            <tr class="tr">
+              <td class="td td-date">
                 <p>6 июня, 2022 / 13:12</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-number">
                 <p>#554424653</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-sum">
                 <div class="price">22 000.03 ₽</div>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-method">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
                   <div class="salesman-box__name">ЮMoney</div>
                 </div>
-              </div>
-              <div class="td td-status">
+              </td>
+              <td class="td td-status">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
                   <div class="salesman-box__name">ЮMoney</div>
@@ -223,26 +223,26 @@
                   <div class="status-order__icon"><img src="img/status2.svg" alt=""></div>
                   <p>Ошибка</p>
                 </div>
-              </div>
-            </div>
+              </td>
+            </tr>
 
-            <div class="tr">
-              <div class="td">
+            <tr class="tr">
+              <td class="td td-date">
                 <p>6 июня, 2022 / 13:12</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-number">
                 <p>#554424653</p>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-sum">
                 <div class="price">22 000.03 ₽</div>
-              </div>
-              <div class="td">
+              </td>
+              <td class="td td-method">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
                   <div class="salesman-box__name">QIWI</div>
                 </div>
-              </div>
-              <div class="td td-status">
+              </td>
+              <td class="td td-status">
                 <div class="salesman-box">
                   <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
                   <div class="salesman-box__name">QIWI</div>
@@ -251,10 +251,10 @@
                   <div class="status-order__icon"><img src="img/status3.svg" alt=""></div>
                   <p>В ожидании</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <a href="#" class="btn btn-md btn-border btn-toggle">Показать еще</a>
       </div>
@@ -264,7 +264,11 @@
   <footer>
     <div class="container">
       <div class="copyright">© 2022 Jyn.ru</div>
-      <a href="#" class="link color-grey" target="_blank">Центр помощи</a>
+      <ul class="footer-list my-ul">
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
+      </ul>
+
 
       <ul class="list-social my-ul">
         <li><a href="#">
@@ -389,6 +393,7 @@
               </a>
             </div>
           </div>
+          <div class="input-description">Комиссия 3%, минимальная сумма вывода 1000 ₽</div>
         </div>
 
         <div class="form-row">

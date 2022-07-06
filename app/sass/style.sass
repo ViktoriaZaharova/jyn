@@ -93,25 +93,27 @@ input, textarea, select
     outline: none
     box-shadow: none
     background: #202020
+    color: #fff
   &:focus
     border: 1px solid #373737
 
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
   border: 1px solid transparent
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: #fff
   -webkit-box-shadow: 0 0 0px 1000px #282828 inset
   transition: background-color 5000s ease-in-out 0s
   color: #fff
   &:hover, &:focus
     border: 1px solid transparent
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: #fff
     -webkit-box-shadow: 0 0 0px 1000px #202020 inset
     transition: background-color 5000s ease-in-out 0s
     color: #fff
     opacity: 1
     &::placeholder
       color: #fff
+
 
 textarea
   height: 152px
@@ -226,6 +228,7 @@ button, .btn
   &.disabled
     color: #fff
     background: #676767
+    cursor: auto
 
 .btn-border
   border: 1px solid #FFFFFF
@@ -253,6 +256,10 @@ button, .btn
   &.disabled
     background: #9D9D9D
     color: #393939
+
+.timer
+  display: inline-block
+  margin: 0 0 0 5px
 
 .svg-icon
   display: inline-block
@@ -325,6 +332,9 @@ h2
 
 .mb-40
   margin-bottom: 40px
+
+.m-auto
+  margin: auto
 
 .color-grey
   color: #9D9D9D

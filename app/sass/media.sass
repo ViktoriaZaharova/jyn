@@ -16,54 +16,71 @@
   .dropdown-cabinet
     margin: 0 15px
 
-  .td:nth-child(2)
-    width: 53%
+  table, tbody, thead
+    display: block
 
-  .td:nth-child(3), .td:nth-child(4)
+  .tbody .td
+    padding: 8px 16px
+
+  .td
+    padding: 8px 16px
+
+  .tr
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+  .td-description
+    width: 50%
+
+  .td-salesman, .td-price
     width: 20%
     padding: 26px 10px
+
+  .td-server
+    width: 10%
 
   .table-deals
     .thead
       display: none
     .td
-      &:first-child, &:nth-child(2)
+      &-date, &-order
         width: 50%
         color: #9D9D9D
         font-size: 14px
         padding: 16px 16px 8px
-      &:nth-child(2)
+      &-order
         padding: 16px 16px 8px
         text-align: right
         a
           margin-left: auto
           color: #9D9D9D
-      &:nth-child(3)
+      &-description
         width: 100%
         padding: 0 16px 8px
-      &:nth-child(5)
+      &-sum
         padding: 0 16px 16px
         width: 100%
-      &:nth-child(5).td-status
+      &-sum
         width: 100%
-      &:nth-child(4).td-status
+      &-status
         border-top: 1px solid #282828
         width: 100%
         order: 1
         padding: 16px
-    .td-settings
-      position: absolute
-      bottom: 20px
-      right: 16px
-      padding: 0
-      width: fit-content
+      &-settings
+        position: absolute
+        bottom: 20px
+        right: 16px
+        padding: 0
+        width: fit-content
 
   .tr
     position: relative
 
   .table-buy
     .td
-      &:nth-child(4)
+      &-salesman
         border-top: 1px solid #282828
         width: 100%
         order: 1
@@ -71,11 +88,11 @@
         display: flex
         align-items: center
 
-      &:nth-child(5).td-status
+      &-status
         display: none
 
 
-      &:last-child
+      &-sum
         width: 100%
         padding: 0 16px 16px
 
@@ -86,19 +103,19 @@
   .table-history
     .td
       width: 100%
-      &:first-child, &:nth-child(2)
+      &-date, &-number
         width: 50%
         font-size: 14px
         padding: 16px 16px 8px
         color: #9D9D9D
-      &:nth-child(2)
+      &-number
         text-align: right
       &:nth-child(3)
         padding: 0 16px 16px
 
-      &:nth-child(4)
+      &-method
         display: none
-      &:last-child
+      &-status
         padding: 16px
         border-top: 1px solid #282828
     .td-status
@@ -169,21 +186,20 @@
   .thead
     display: none
 
-  .tbody .td
-    padding: 16px
+  //.tbody .td
+  //  padding: 16px
 
   .table
     margin: 24px 0 0
 
   .table-ads
-
     .td
       padding: 16px
-      &:first-child
+      &-server
         width: 10%
-      &:nth-child(2)
+      &-description
         width: 70%
-      &:nth-child(3)
+      &-salesman
         order: 1
         width: 100%
         padding: 16px
@@ -202,9 +218,19 @@
   .table-deals
     .tr:before
       display: none
+    .td-settings
+      padding: 0
+    .td-sum
+      padding-top: 0
 
-  .table-deals .td-settings
-    padding: 0
+  .table-history
+    .tr:before
+      display: none
+
+
+  .td-sum
+    font-weight: 500
+    font-size: 20px
 
   .form-chat .registration-box__body
     padding: 30px 16px
@@ -261,6 +287,15 @@
     .btn
       margin: 24px auto 0
 
+  .filter-wrapper .form-search
+    width: 100%
+    max-width: none
+
+  .dropdown-price
+    margin: 16px 0 0
+
+  .copyright, .footer-list li
+    margin: 0 15px 0 0
 
 @media only screen and (max-width: 576px)
   header
@@ -276,6 +311,7 @@
     header
       margin: 0
     .registration-box
+      background: transparent
       &__head
         padding: 0
       &__body
@@ -285,16 +321,28 @@
         padding: 0
         border: none
 
+
+
   .form-row
     margin: 0 0 24px
 
   footer
     margin: 33px 0 0
+    .container
+      align-items: flex-start
+
+  .footer-list
+    width: 70%
+    li
+      margin: 0 0 12px
+      &:last-child
+        margin: 0
 
   .copyright
     width: 100%
     order: 1
     margin: 12px 0 0
+
 
   .page
     padding: 24px 0 0
@@ -392,12 +440,18 @@
       margin: 0 0 8px
       width: 100%
 
+  .chat-box-status h2
+    display: block
 
-@media only screen and (max-width: 480px)
-  /**/
+  .error-page
+    h1
+      font-size: 150px
+      line-height: 128px
+    .subtitle
+      margin: 24px auto
+      font-size: 16px
+      font-weight: 500
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
-
+  .file-result__box
+    width: 60px
+    height: 60px

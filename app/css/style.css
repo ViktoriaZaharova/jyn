@@ -100,20 +100,21 @@ input, textarea, select {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #202020; }
+    background: #202020;
+    color: #fff; }
   input:focus, textarea:focus, select:focus {
     border: 1px solid #373737; }
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border: 1px solid transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px #282828 inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
   color: #fff; }
   input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
     border: 1px solid transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #fff;
     -webkit-box-shadow: 0 0 0px 1000px #202020 inset;
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
@@ -263,7 +264,8 @@ button, .btn {
     color: #fff; }
   .btn-accent.disabled {
     color: #fff;
-    background: #676767; }
+    background: #676767;
+    cursor: auto; }
 
 .btn-border {
   border: 1px solid #FFFFFF;
@@ -291,6 +293,10 @@ button, .btn {
   .btn-white.disabled {
     background: #9D9D9D;
     color: #393939; }
+
+.timer {
+  display: inline-block;
+  margin: 0 0 0 5px; }
 
 .svg-icon {
   display: inline-block;
@@ -378,6 +384,9 @@ h2 {
 
 .mb-40 {
   margin-bottom: 40px; }
+
+.m-auto {
+  margin: auto; }
 
 .color-grey {
   color: #9D9D9D; }

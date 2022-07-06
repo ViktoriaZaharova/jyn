@@ -212,40 +212,62 @@
                     <button type="submit" class="btn btn-accent btn-lg">Оплатить 410 ₽</button>
 
                     <div class="attention-text">
-                      <p>Продавец не сможет получить оплату до тех пор, пока вы не подтвердите выполнение им всех обязательств.</p>
+                      <p>Продавец не сможет получить оплату до тех пор, пока вы не подтвердите выполнение им всех
+                        обязательств.</p>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
             <div class="col-4 mb-16">
-              <div class="registration-box order-box chat-box">
+              <div class="registration-box order-box chat-box chat-box-status">
                 <div class="registration-box__head">
-                  <h2>Чат</h2>
-                  <div class="salesman-box">
-                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
-                      <div class="status status-off"></div>
-                    </div>
-                    <div class="salesman-box__name">Leslie Alexander</div>
-                  </div>
+                  <h2>Статус</h2>
                 </div>
                 <form method="post" class="form form-chat">
                   <div class="registration-box__body">
-                    <div class="text-info">
-                      <p>Задайте продавцу вопрос</p>
+
+                    <div class="chat-item">
+                      <div class="chat-item__wrapper">
+                        <div class="status-order status-verification status-order-on">
+                          <div class="status-order__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#check"></use>
+                            </svg>
+                          </div>
+                          <p>Проверка аккаунта прошла успешно</p>
+                        </div>
+                        <div class="box-text">
+                          <ul>
+                            <li>Ваши данные для входа</li>
+                            <li>mhouston@optonline.net</li>
+                            <li>Пароль: 3nnnn3FEF</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="date">14:36</div>
                     </div>
 
-                    <div class="quote-box">
-                      
+                    <div class="chat-item">
+                      <div class="chat-item__wrapper">
+                       <strong>Информация для покупателя:</strong>
+                        <div class="box-text">
+                          <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток</p>
+                          <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток</p>
+                        </div>
+                      </div>
+
+                      <div class="date">14:36</div>
                     </div>
                   </div>
 
                   <div class="registration-box__footer">
-                    <label class="message-input">
-                      <input type="text" name="chat" placeholder="Написать...">
-                    </label>
-                    
-                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
+<!--                    <label class="message-input">-->
+<!--                      <input type="text" name="chat" placeholder="Написать...">-->
+<!--                    </label>-->
+
+<!--                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>-->
                   </div>
                 </form>
               </div>
