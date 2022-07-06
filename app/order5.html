@@ -352,7 +352,10 @@
                           xlink:href="img/sprite.svg#file"></use></svg></span>
                     </label>
                     <label class="message-input">
-                      <textarea name="message" class="textarea-resize" placeholder="Написать..."></textarea>
+<!--                      <textarea name="message" class="textarea-resize" placeholder="Написать..."></textarea>-->
+                      <span class="grow-wrap">
+                        <textarea name="text" rows="1" onInput="this.parentNode.dataset.replicatedValue = this.value" placeholder="Написать..."></textarea>
+                      </span>
                     </label>
 
                     <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
