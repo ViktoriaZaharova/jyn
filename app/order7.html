@@ -172,11 +172,13 @@
                     <div class="form-row">
                       <div class="input-title">
                         <p>Способ вывода средств</p>
+                        <span>за 1 ед.</span>
                       </div>
-                      <div class="dropdown dropdown-select">
+                      <div class="dropdown dropdown-select dropdown-payment">
                         <div class="dropdown-toggle">
                           <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
                           <p>Банковская карта</p>
+                          <span class="input-sum">200<sup>₽</sup></span>
                           <div class="dropdown-toggle__icon"></div>
                         </div>
                         <div class="dropdown-menu">
@@ -194,18 +196,39 @@
                           </a>
                         </div>
                       </div>
+
+                      <div class="input-description">Комиссия: 5%</div>
                     </div>
 
-                    <div class="form-row total-sum">
-                      <div class="total-sum-val">
-                        <p>Итого к получению:</p>
-                        <span>410 ₽</span>
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Получу</p>
+                        </div>
+                        <label>
+                          <input type="text" value="2" name="sum" required>
+                        </label>
                       </div>
 
-                      <div class="percent">
-                        <p>Комиссия: </p>
-                        <span>10 ₽</span>
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Заплачу</p>
+                        </div>
+                        <label>
+                          <input type="text" value="400" name="value_inp" required>
+                          <span class="input-subtext">₽</span>
+                        </label>
                       </div>
+                      <div class="input-description">Минимум 26 316 ед. золота (требование продавца)</div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Имя персонажа</p>
+                      </div>
+                      <label>
+                        <input type="text" name="name">
+                      </label>
                     </div>
                   </div>
 
@@ -221,54 +244,98 @@
               </div>
             </div>
             <div class="col-4 mb-16">
-              <div class="registration-box order-box chat-box chat-box-status">
+              <div class="registration-box order-box chat-box">
                 <div class="registration-box__head">
-                  <h2>Статус</h2>
+                  <h2>Чат</h2>
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Leslie Alexander</div>
+                  </div>
                 </div>
                 <form method="post" class="form form-chat">
                   <div class="registration-box__body">
-
-                    <div class="chat-item">
-                      <div class="chat-item__wrapper">
-                        <div class="status-order status-verification status-order-on">
-                          <div class="status-order__icon">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#check"></use>
-                            </svg>
-                          </div>
-                          <p>Проверка аккаунта прошла успешно</p>
-                        </div>
-                        <div class="box-text">
-                          <ul>
-                            <li>Ваши данные для входа</li>
-                            <li>mhouston@optonline.net</li>
-                            <li>Пароль: 3nnnn3FEF</li>
-                          </ul>
-                        </div>
+                    <div class="quote-box">
+                      <div class="quote-box__photo">
+                        <img src="img/photo3.jpeg" alt="">
                       </div>
+                      <div class="quote-box__content">
+                        <div class="quote-box-cat">
+                          <a href="img/image1.jpeg" data-fancybox="image" class="image-chat image-chat-min"><img src="img/image1.jpeg" alt=""></a>
+                          <a href="img/image2.jpeg" data-fancybox="image" class="image-chat image-chat-max"><img src="img/image2.jpeg" alt=""></a>
+                         <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э.</p>
+                          <p>Спасибо за покупку. Ждем вас еще!)</p>
+                        </div>
 
+                      </div>
                       <div class="date">14:36</div>
                     </div>
 
-                    <div class="chat-item">
-                      <div class="chat-item__wrapper">
-                       <strong>Информация для покупателя:</strong>
-                        <div class="box-text">
-                          <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток</p>
-                          <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток</p>
-                        </div>
-                      </div>
 
+
+                    <div class="quote-box answer-box">
+                      <div class="quote-box-cat">
+                        <p>Спасибо!</p>
+                      </div>
                       <div class="date">14:36</div>
                     </div>
                   </div>
 
                   <div class="registration-box__footer">
-<!--                    <label class="message-input">-->
-<!--                      <input type="text" name="chat" placeholder="Написать...">-->
-<!--                    </label>-->
+                    <label class="file">
+                      <input type="file" class="inp-file">
+                      <span class="file-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#file"></use></svg></span>
+                    </label>
+                    <label class="message-input">
+                      <textarea name="message" rows="1" class="textarea-resize" placeholder="Написать..."></textarea>
+                    </label>
 
-<!--                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>-->
+                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
+
+                    <div class="file-result">
+                      <div class="file-result__box">
+                        <img src="img/file1.jpeg" alt="">
+                        <a href="#" class="btn-delete-file">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="file-result__box">
+                        <img src="img/file2.jpeg" alt="">
+                        <a href="#" class="btn-delete-file">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="file-result__box">
+                        <img src="img/file3.jpeg" alt="">
+                        <a href="#" class="btn-delete-file">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="file-result__box">
+                        <img src="img/file4.jpeg" alt="">
+                        <a href="#" class="btn-delete-file">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="file-result__box">
+                        <img src="img/file5.jpeg" alt="">
+                        <a href="#" class="btn-delete-file">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -287,7 +354,6 @@
         <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
         <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
       </ul>
-
 
       <ul class="list-social my-ul">
         <li><a href="#">
@@ -459,6 +525,7 @@
 <div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/autosize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/common.js"></script>
 

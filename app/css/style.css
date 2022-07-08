@@ -572,6 +572,17 @@ a.color-white:hover {
   max-width: none;
   border-radius: 0 0 8px; }
 
+.dropdown-payment .dropdown-toggle__icon {
+  margin: 0; }
+
+.input-sum {
+  margin: 0 16px 0 auto;
+  font-size: 16px;
+  font-weight: 500; }
+  .input-sum sup {
+    margin: 0 0 0 3px;
+    color: #9D9D9D; }
+
 .list-tags {
   display: -webkit-box;
   display: -ms-flexbox;

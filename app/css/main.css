@@ -733,6 +733,50 @@
       flex-wrap: wrap;
   width: calc(100% + 5px); }
 
+.image-chat {
+  overflow: hidden;
+  margin: 0 0 6px;
+  border-radius: 8px;
+  height: 156px;
+  width: 100%;
+  position: relative; }
+  .image-chat:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("../img/lupe.svg") no-repeat center;
+      background-size: 100%;
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .image-chat:hover:before {
+    opacity: 1; }
+  .image-chat img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.image-chat-min {
+  max-width: 156px; }
+
+.image-chat-max {
+  max-width: 260px; }
+
 .message-input {
   width: calc(100% - 130px - 36px);
   padding: 0 0 0 16px; }
