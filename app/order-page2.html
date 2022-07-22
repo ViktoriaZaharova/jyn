@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>JYN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <div class="user-photo"></div>
+      <div class="user-name">Jane Cooper</div>
+    </div>
+    <div class="mobile-menu__body">
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Мои финансы</span>
+        <span class="money-value">3 245.50  ₽</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Настройки</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Центр помощи</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Выход</span>
+      </a>
+    </div>
+    <div class="mobile-menu__footer">
+      <a href="#modal1" class="btn btn-white btn-lg open_modal">Подать объявление</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">JYN</a>
+
+      <div class="search-wrapper">
+        <form method="post" class="form-search">
+          <label>
+            <input type="text" placeholder="Поиск по играм" name="search" required>
+            <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+          </label>
+          <button type="submit" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-result">
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dark Orbit</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Drakensang Online</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Diablo Immortal</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dota 2</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="user-menu">
+        <a href="#" class="user-menu__link color-white font-500">Мои сделки
+          <span class="user-menu__val">23</span>
+        </a>
+      </div>
+
+      <div class="dropdown dropdown-cabinet">
+        <div class="user-avatar dropdown-toggle"></div>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu__head">
+            <div class="user-photo"></div>
+            <div class="user-name">Jane Cooper</div>
+          </div>
+          <div class="dropdown-menu__body">
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Мои финансы</span>
+              <span class="money-value">3 245.50  ₽</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Настройки</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Центр помощи</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Выход</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#modal1" class="btn btn-white btn-md open_modal">Подать объявление</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <section class="order-section">
+      <div class="container">
+
+        <div class="title-wrapper">
+          <h1>Оформление заказа</h1>
+        </div>
+
+
+        <div class="w-100">
+          <div class="row">
+            <div class="col-6 mb-16">
+              <div class="registration-box order-box">
+                <div class="registration-box__head">
+                  <h2>Подробности</h2>
+                </div>
+                <div class="registration-box__body">
+                  <div class="form-row">
+                    <div class="input-title">
+                      <p>Название</p>
+                    </div>
+                    <div class="box-text description-text">
+                      <p>33 персонажа · 9 легендарных</p>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="input-title">
+                      <p>Описание</p>
+                    </div>
+                    <div class="box-text description-text">
+                      <p>84 уровень батл пасса 13 сезона. Все персонажи открыты
+                        137900 жетонов легенд.
+                        Вся информация находится в видео
+                        Ссылка
+                        https://www.youtube.com/</p>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-group">
+                    <div class="levels-game">
+                      <div class="levels-game-preview">
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar1.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar2.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar3.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar4.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar5.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar6.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar7.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item active">
+                          <img src="img/avatar8.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar9.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                        <div class="levels-game-preview__item">
+                          <img src="img/avatar10.png" alt="">
+                          <div class="level-value">90 ур.</div>
+                        </div>
+                      </div>
+
+                      <div class="levels-game-max">
+                        <div class="levels-game-box">
+                          <div class="levels-game-box__images">
+                            <img src="img/avatar11.png" alt="" class="img-bg">
+
+                            <div class="weapon-box">
+                              <ul class="list-weapon my-ul">
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon1.png" alt=""></a></li>
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon2.png" alt=""></a></li>
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon1.png" alt=""></a></li>
+                              </ul>
+                              <ul class="list-weapon my-ul">
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon3.png" alt=""></a></li>
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon3.png" alt=""></a></li>
+                                <li><a href="#" class="list-weapon__item"><img src="img/icon2.png" alt=""></a></li>
+                              </ul>
+                            </div>
+
+
+                            <div class="bonuses-box">
+                              <ul class="list-bonuses my-ul">
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                              </ul>
+                              <ul class="list-bonuses my-ul">
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                                <li><a href="#" data-text="Blossom Cloud Irutsuki" class="tooltip bonuses-item">
+                                  <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#lock"></use>
+                                  </svg>
+                                </a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="levels-game-box__body">
+                            <div class="levels-game-box__head">
+                              <h4>Kamisato Ayaka</h4>
+                            </div>
+                            <div class="levels-game-box__text">
+                              <h3>Weapon</h3>
+                              <div class="levels-game-box__it">
+                                <div class="levels-game-box__it-img"><img src="img/icon2.png" alt=""></div>
+                                <div class="levels-game-box__it-text">
+                                  <p>Skyward Spine</p>
+                                  <span>Lv.90 · Refinement Rank 3</span>
+                                </div>
+                              </div>
+                              <div class="box-text">
+                                <p>A ceremonial sword that has become petrified over time. The trinkets on it are still
+                                  visible. It grants the wielder the power to withstand the winds of time.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-group">
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Легендарных оружия</p>
+                      </div>
+                      <span>2</span>
+                    </div>
+
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Созвездия на легендарках</p>
+                      </div>
+                      <span>4</span>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-group">
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Привязка к email</p>
+                      </div>
+                      <span>Да</span>
+                    </div>
+
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Привязка к телефону</p>
+                      </div>
+                      <span>Нет</span>
+                    </div>
+                  </div>
+
+
+                  <div class="form-row form-group">
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Привязки к соц. сетям</p>
+                      </div>
+                      <span>Sony</span>
+                    </div>
+
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Ранг приключений</p>
+                      </div>
+                      <span>57</span>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-group">
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Персонажи</p>
+                      </div>
+                      <span>33</span>
+                    </div>
+
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Достижения</p>
+                      </div>
+                      <span>527</span>
+                    </div>
+                  </div>
+
+                  <div class="form-row form-group">
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Витая Бездна</p>
+                      </div>
+                      <span>12-1</span>
+                    </div>
+
+                    <div class="w-50">
+                      <div class="input-title">
+                        <p>Регион</p>
+                      </div>
+                      <span>Европа</span>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <a href="#" class="color-white link-info">Вся информация об аккаунте
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#link"></use>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="input-title">
+                      <p>Способ вывода средств</p>
+                    </div>
+                    <div class="dropdown dropdown-select dropdown-select-v2">
+                      <div class="dropdown-toggle">
+                        <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+                        <p>Банковская карта</p>
+                        <div class="input-subtext">410 <span>₽</span></div>
+                        <div class="dropdown-toggle__icon"></div>
+                      </div>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-menu__link">
+                          <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                          <span class="dropdown-menu__link-text">Qiwi </span>
+                          <div class="input-subtext">410 <span>₽</span></div>
+                        </a>
+                        <a href="#" class="dropdown-menu__link">
+                          <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                          <span class="dropdown-menu__link-text">ЮMoney</span>
+                          <div class="input-subtext">410 <span>₽</span></div>
+                        </a>
+                        <a href="#" class="dropdown-menu__link">
+                          <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                          <span class="dropdown-menu__link-text">Банковская карта</span>
+                          <div class="input-subtext">410 <span>₽</span></div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="percent">
+                      <p>Комиссия: </p>
+                      <span>5%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="registration-box__footer">
+                  <a href="#modal3" class="btn btn-accent btn-lg open_modal btn-confirm">Подтвердить получение</a>
+
+                  <div class="attention-text">
+                    <p>Продавец не сможет получить оплату до тех пор, пока вы не подтвердите выполнение им всех
+                      обязательств.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-16">
+              <div class="registration-box order-box chat-box">
+                <div class="registration-box__head">
+                  <h2>Чат</h2>
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Leslie Alexander</div>
+                  </div>
+                </div>
+                <form method="post" class="form form-chat">
+                  <div class="registration-box__body">
+                    <div class="chat-item">
+                      <div class="chat-item__wrapper">
+                        <div class="salesman-box">
+                          <div class="salesman-box__photo"><img src="img/alert-icon.svg" alt=""></div>
+                          <div class="salesman-box__name">Jyn.ru</div>
+                        </div>
+                        <div class="box-text">
+                          <ul>
+                            <li>Покупатель <a href="#" class="d-inline text-decoration color-white">Jane Cooper</a>
+                              оплатил
+                              <a href="#" class="d-inline color-white text-decoration">Заказ #DGSDVFE2</a>. Оплата
+                              производится через вход.
+                            </li>
+                            <li>Ниже описан порядок действия</li>
+                            <li>-Оплата нужного вам количества</li>
+                            <li><a href="#" class="d-inline text-decoration color-white">Jane Cooper</a> не забудьте
+                              подтвердить заказ
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="date">14:36</div>
+                    </div>
+
+                    <div class="quote-box">
+                      <div class="quote-box__photo">
+                        <img src="img/photo3.jpeg" alt="">
+                      </div>
+                      <div class="quote-box__content">
+                        <div class="quote-box-cat">
+                          <p>Спасибо за покупку. Ждем вас еще!)</p>
+                        </div>
+                      </div>
+                      <div class="date">14:36</div>
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <label class="message-input">
+                      <input type="text" name="chat" placeholder="Написать...">
+                    </label>
+
+                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2022 Jyn.ru</div>
+      <ul class="footer-list my-ul">
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
+      </ul>
+
+
+      <ul class="list-social my-ul">
+        <li><a href="#">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a></li>
+        <li><a href="#" class="vk-link">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+<div class="modal__div" id="modal1">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Подать объявление</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сервер</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">PC
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Настройки</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Описание</p>
+          </div>
+          <label>
+            <textarea name="message"></textarea>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Количество</p>
+          </div>
+          <label>
+            <input type="text" value="12" class="input-password" name="value" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Цена</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-lg">Отмена</a>
+          <button type="submit" class="btn btn-white btn-lg">Опубликовать</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal__div" id="modal2">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Вывод средств</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Способ вывода средств</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">
+              <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+              <p>Банковская карта</p>
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Qiwi </span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">ЮMoney</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Банковская карта</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Номер карты</p>
+          </div>
+          <label>
+            <input type="text" value="4234 2224 5423 5356" name="number_card" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сумма</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+
+        <div class="form-row total-sum">
+          <div class="total-sum-val">
+            <p>Итого к получению:</p>
+            <span>710 ₽</span>
+          </div>
+
+          <div class="percent">
+            <p>Комиссия: </p>
+            <span>10 ₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-md">Отмена</a>
+          <button type="submit" class="btn btn-white btn-md">Вывести деньги</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal__div" id="modal3">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Отправить деньги</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="box-text">
+            <p>Внимание! Отправлять деньги продавцу нужно только после выполнения продавцом всех обязательств по вашему
+              заказу. Мы не сможем их вернуть!</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-md">Отмена</a>
+          <button type="submit" class="btn btn-white btn-md">Отправить деньги</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

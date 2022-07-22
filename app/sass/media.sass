@@ -270,6 +270,9 @@
       max-width: none
       margin: 0 0 16px
 
+  .order-box
+    max-width: none
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
   .wrapper-registration
@@ -329,6 +332,13 @@
 
   .copyright, .footer-list li
     margin: 0 15px 0 0
+
+  .levels-game-max
+    max-width: 311px
+
+  .levels-game-preview
+    width: calc(100% - 311px)
+
 
 @media only screen and (max-width: 576px)
   header
@@ -514,3 +524,27 @@
       height: 98px
       padding: 0 4px
       margin: 0 0 8px
+
+  .levels-game-max
+    max-width: none
+
+
+
+  .levels-game-preview
+    width: 100%
+    padding: 0
+    &__item
+      width: calc(33.3% - 6px)
+      display: none
+
+      &:nth-child(-n+9)
+        display: block
+
+
+@media only screen and (max-width: 480px)
+  .levels-game-preview
+    &__item
+      height: 98px
+
+  .levels-game-box
+    height: 690px
