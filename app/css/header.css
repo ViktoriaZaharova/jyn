@@ -181,6 +181,37 @@ header {
 .user-name {
   margin-left: 16px; }
 
+.user-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .user-menu__link:hover .user-menu__val {
+    color: #fff; }
+
+.user-menu__val {
+  margin: 0 0 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E15A5A;
+  border-radius: 40px;
+  padding: 2px 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 500;
+  height: 26px; }
+
 /*==========  section header end  ==========*/
 /*==========  section mobile-menu ==========*/
 .mobile-menu {

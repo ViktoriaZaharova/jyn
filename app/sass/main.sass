@@ -46,6 +46,29 @@
       max-width: 406px
       width: 100%
       margin: 0 auto
+  &__item
+    border-bottom: 1px solid #282828
+    &:last-child
+      border: none
+
+.registration-box-settings
+  .registration-box__body
+    padding: 32px
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .text
+    margin: 0 auto 0 0
+    max-width: 415px
+    font-size: 24px
+    font-weight: bold
+    p
+      line-height: 22px
+      margin: 8px 0 0
+      color: #9D9D9D
+      font-size: 14px
+      font-weight: normal
 
 .btn-confirm
   max-width: 406px
@@ -389,63 +412,12 @@
   &.active
     stroke: #fff
 
-//.table-ads
-//  .td-price
-//    width: 14%
-//  .td-salesman
-//    width: 17%
-
-//.table-deals
-  //.td
-  //  &:first-child
-  //    width: 16%
-  //  &:nth-child(2)
-  //    width: 14%
-  //  &:nth-child(3)
-  //    width: 35%
-  //  &:nth-child(5)
-  //    width: 13%
-  //  &:nth-child(4).td-status
-  //    width: 15%
-  //  .td-settings
-  //    width: 5%
-  //    padding: 0 24px
-  //.td-date
-  //  width: 16%
-  //.td-order
-  //  width: 14%
-  //.td-description
-  //  width: 35%
-  //.td-status
-  //  width: 15%
-  //.td-sum
-  //  width: 13%
-  //.td-settings
-  //  width: 5%
-  //  padding: 0 24px
-
-//.table-buy
-  //.td
-    //&:nth-child(2)
-    //  width: 13%
-    //&:nth-child(3)
-    //  width: 30%
-    //&:nth-child(4)
-    //  width: 15%
-    //&:last-child
-    //  width: 13%
-
-  //.td-order
-  //  width: 13%
-  //
-  //.td-description
-  //  width: 30%
-  //.td-salesman
-  //  width: 15%
-  //.td-status
-  //  width: 13%
-  //.td-sum
-  //  width: 13%
+.icon-arrow-price
+  width: 20px
+  height: 20px
+  fill: none
+  stroke: #676767
+  margin: 0 0 -3px 4px
 
 .filter-wrapper
   width: 100%
@@ -606,6 +578,8 @@
   .td-status
     .salesman-box
       display: none
+  .td-description
+    width: 35%
 
 .total-sum
   &-val
@@ -914,31 +888,45 @@
   display: none
 
 .file-result
-  width: 100%
+  width: calc(100% + 8px)
   display: flex
   align-items: flex-start
   flex-wrap: wrap
-  margin: 16px 0 0
+  margin: 16px -4px 0
   &__box
-    width: 80px
+    width: 88px
     height: 80px
     overflow: hidden
     border-radius: 8px
     position: relative
     @include d-flex
-    margin: 0 8px 8px 0
+    margin: 0 0 8px 0
+    padding: 0 4px
     &:last-child
       margin: 0 0 8px
     img
       width: 100%
       height: 100%
       object-fit: cover
+      border-radius: 8px
+
+.file-result-order
+  width: calc(100% + 12px)
+  margin: 24px -6px 0
+  .file-result__box
+    width: 136px
+    height: 124px
+    margin: 0 0 12px
+    padding: 0 6px
+
+    &:last-child
+      margin: 0
 
 .btn-delete-file
   @include d-flex
   stroke: #fff
   top: 2px
-  right: 2px
+  right: 6px
   position: absolute
   border: 1.5px solid #FFFFFF
     radius: 50%

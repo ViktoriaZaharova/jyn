@@ -96,8 +96,11 @@
       </div>
 
       <div class="user-menu">
-        <a href="#" class="user-menu__link color-white font-500">Мои сделки</a>
+        <a href="#" class="user-menu__link color-white font-500">Мои сделки
+          <span class="user-menu__val">23</span>
+        </a>
       </div>
+
 
       <div class="dropdown dropdown-cabinet">
         <div class="user-avatar dropdown-toggle"></div>
@@ -156,103 +159,73 @@
 
     <section class="history">
       <div class="container">
-        <h2>История выплат</h2>
+        <h2>Операции</h2>
 
         <table class="table table-history">
           <thead class="thead">
-            <tr class="tr">
-              <td class="td td-date">Дата</td>
-              <td class="td td-number">Номер выплаты</td>
-              <td class="td td-sum">Сумма вывода</td>
-              <td class="td td-method">Метод вывода </td>
-              <td class="td td-status">Статус</td>
-            </tr>
+          <tr class="tr">
+            <td class="td td-date">Дата</td>
+            <td class="td td-description">Описание</td>
+            <td class="td td-sum">Сумма вывода</td>
+            <td class="td td-status">Статус</td>
+          </tr>
           </thead>
 
           <tbody class="tbody">
-            <tr class="tr">
-              <td class="td td-date">
-                <p>6 июня, 2022 / 13:12</p>
-              </td>
-              <td class="td td-number">
-                <p>#554424653</p>
-              </td>
-              <td class="td td-sum">
-                <div class="price">22 000.03 ₽</div>
-              </td>
-              <td class="td td-method">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
-                  <div class="salesman-box__name">Банковская карта</div>
-                </div>
-              </td>
-              <td class="td td-status">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay1.svg" alt=""></div>
-                  <div class="salesman-box__name">Банковская карта</div>
-                </div>
-                <div class="status-order status-order-on">
-                  <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
-                  <p>Выполнен</p>
-                </div>
-              </td>
-            </tr>
+          <tr class="tr">
+            <td class="td td-date">
+              <p>6 июня, 2022 / 13:12</p>
+            </td>
+            <td class="td td-description">
+              <p>Выплата #554424653</p>
+            </td>
+            <td class="td td-sum">
+              <div class="price">- 22 000.03 ₽</div>
+            </td>
 
-            <tr class="tr">
-              <td class="td td-date">
-                <p>6 июня, 2022 / 13:12</p>
-              </td>
-              <td class="td td-number">
-                <p>#554424653</p>
-              </td>
-              <td class="td td-sum">
-                <div class="price">22 000.03 ₽</div>
-              </td>
-              <td class="td td-method">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
-                  <div class="salesman-box__name">ЮMoney</div>
-                </div>
-              </td>
-              <td class="td td-status">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay2.svg" alt=""></div>
-                  <div class="salesman-box__name">ЮMoney</div>
-                </div>
-                <div class="status-order status-order-error">
-                  <div class="status-order__icon"><img src="img/status2.svg" alt=""></div>
-                  <p>Ошибка</p>
-                </div>
-              </td>
-            </tr>
+            <td class="td td-status">
+              <a href="#infoFinance1" class="status-order status-order-on open_modal">
+                <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
+                <p>Выполнен</p>
+              </a>
+            </td>
+          </tr>
 
-            <tr class="tr">
-              <td class="td td-date">
-                <p>6 июня, 2022 / 13:12</p>
-              </td>
-              <td class="td td-number">
-                <p>#554424653</p>
-              </td>
-              <td class="td td-sum">
-                <div class="price">22 000.03 ₽</div>
-              </td>
-              <td class="td td-method">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
-                  <div class="salesman-box__name">QIWI</div>
-                </div>
-              </td>
-              <td class="td td-status">
-                <div class="salesman-box">
-                  <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
-                  <div class="salesman-box__name">QIWI</div>
-                </div>
-                <div class="status-order status-order-wait">
-                  <div class="status-order__icon"><img src="img/status3.svg" alt=""></div>
-                  <p>В ожидании</p>
-                </div>
-              </td>
-            </tr>
+          <tr class="tr">
+            <td class="td td-date">
+              <p>6 июня, 2022 / 13:12</p>
+            </td>
+            <td class="td td-description">
+              <p>Пополнение баланса #554424653</p>
+            </td>
+            <td class="td td-sum">
+              <div class="price">+ 300 ₽</div>
+            </td>
+            <td class="td td-status">
+              <a href="#infoFinance2" class="status-order status-order-error open_modal">
+                <div class="status-order__icon"><img src="img/status2.svg" alt=""></div>
+                <p>Ошибка</p>
+              </a>
+            </td>
+          </tr>
+
+          <tr class="tr">
+            <td class="td td-date">
+              <p>6 июня, 2022 / 13:12</p>
+            </td>
+            <td class="td td-description">
+              <p>Сделка #254424653</p>
+            </td>
+            <td class="td td-sum">
+              <div class="price">+ 300 ₽</div>
+            </td>
+            <td class="td td-status">
+              <a href="#infoFinance3" class="status-order status-order-wait open_modal">
+                <div class="status-order__icon"><img src="img/status3.svg" alt=""></div>
+                <p>В ожидании</p>
+              </a>
+            </td>
+          </tr>
           </tbody>
         </table>
 
@@ -434,6 +407,170 @@
         </div>
       </div>
     </form>
+  </div>
+</div>
+
+
+<div class="modal__div" id="infoFinance1">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Информация об операции</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal__div-body">
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Дата операции</span>
+          <p>6 июня, 2022 / 13:12</p>
+        </div>
+        <div class="info-finance-line__item w-50">
+          <span>Номер заказа</span>
+          <p>R24522jD</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item">
+          <span>Описание</span>
+          <p>Сделка #254424653 https://jyn.ru/item/v2/32809576</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Сумма</span>
+          <p>+ 300 ₽</p>
+        </div>
+
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Статус</span>
+          <div class="status-order status-order-on">
+            <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
+            <p>Выполнен</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal__div" id="infoFinance2">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Информация об операции</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal__div-body">
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Дата операции</span>
+          <p>6 июня, 2022 / 13:12</p>
+        </div>
+        <div class="info-finance-line__item w-50">
+          <span>Номер заказа</span>
+          <p>R24522jD</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item">
+          <span>Описание</span>
+          <p>Пополнение баланса #554424653 картой  **** 5356 </p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Сумма</span>
+          <p>+ 300 ₽</p>
+        </div>
+
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Статус</span>
+          <div class="status-order status-order-on">
+            <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
+            <p>Выполнен</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal__div" id="infoFinance3">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Информация об операции</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal__div-body">
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Дата операции</span>
+          <p>6 июня, 2022 / 13:12</p>
+        </div>
+        <div class="info-finance-line__item w-50">
+          <span>Номер заказа</span>
+          <p>R24522jD</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item">
+          <span>Описание</span>
+          <p>Выплата на карту **** 5356</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Сумма</span>
+          <p>+ 300 ₽</p>
+        </div>
+        <div class="info-finance-line__item w-50">
+          <span>Комиссия</span>
+          <p>- 10 ₽</p>
+        </div>
+      </div>
+
+      <div class="info-finance-line">
+        <div class="info-finance-line__item w-50">
+          <span>Статус</span>
+          <div class="status-order status-order-on">
+            <div class="status-order__icon"><img src="img/status1.svg" alt=""></div>
+            <p>Выполнен</p>
+          </div>
+        </div>
+        <div class="info-finance-line__item info-finance-line__item-pay w-50">
+          <span>Метод вывода</span>
+          <div class="salesman-box">
+            <div class="salesman-box__photo"><img src="img/pay3.svg" alt=""></div>
+            <div class="salesman-box__name">QIWI</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

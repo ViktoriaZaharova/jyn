@@ -59,6 +59,34 @@
     max-width: 406px;
     width: 100%;
     margin: 0 auto; }
+  .registration-box__item {
+    border-bottom: 1px solid #282828; }
+    .registration-box__item:last-child {
+      border: none; }
+
+.registration-box-settings .registration-box__body {
+  padding: 32px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.registration-box-settings .text {
+  margin: 0 auto 0 0;
+  max-width: 415px;
+  font-size: 24px;
+  font-weight: bold; }
+  .registration-box-settings .text p {
+    line-height: 22px;
+    margin: 8px 0 0;
+    color: #9D9D9D;
+    font-size: 14px;
+    font-weight: normal; }
 
 .btn-confirm {
   max-width: 406px;
@@ -428,6 +456,13 @@
   .dropdown-toggle-dots.active {
     stroke: #fff; }
 
+.icon-arrow-price {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #676767;
+  margin: 0 0 -3px 4px; }
+
 .filter-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -631,6 +666,9 @@
 
 .table-history .td-status .salesman-box {
   display: none; }
+
+.table-history .td-description {
+  width: 35%; }
 
 .total-sum-val {
   display: -webkit-box;
@@ -1024,7 +1062,7 @@
   display: none; }
 
 .file-result {
-  width: 100%;
+  width: calc(100% + 8px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1033,9 +1071,9 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 16px 0 0; }
+  margin: 16px -4px 0; }
   .file-result__box {
-    width: 80px;
+    width: 88px;
     height: 80px;
     overflow: hidden;
     border-radius: 8px;
@@ -1049,14 +1087,27 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 8px 8px 0; }
+    margin: 0 0 8px 0;
+    padding: 0 4px; }
     .file-result__box:last-child {
       margin: 0 0 8px; }
     .file-result__box img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      border-radius: 8px; }
+
+.file-result-order {
+  width: calc(100% + 12px);
+  margin: 24px -6px 0; }
+  .file-result-order .file-result__box {
+    width: 136px;
+    height: 124px;
+    margin: 0 0 12px;
+    padding: 0 6px; }
+    .file-result-order .file-result__box:last-child {
+      margin: 0; }
 
 .btn-delete-file {
   display: -webkit-box;
@@ -1070,7 +1121,7 @@
           justify-content: center;
   stroke: #fff;
   top: 2px;
-  right: 2px;
+  right: 6px;
   position: absolute;
   border: 1.5px solid #FFFFFF;
     border-radius: 50%;

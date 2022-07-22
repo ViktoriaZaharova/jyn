@@ -7,11 +7,17 @@
   .search-wrapper
     max-width: 480px
 
+  .dropdown-cabinet
+    margin: 0 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+  header
+    .logo
+      margin: 0 20px 0 0
+
   .search-wrapper
-    max-width: 310px
+    max-width: 280px
 
   .dropdown-cabinet
     margin: 0 15px
@@ -38,7 +44,9 @@
     border-radius: 16px
     background: #1C1C1C
 
-
+  thead
+    .tr
+      background: transparent
 
   .td-description
     width: 50%
@@ -137,6 +145,9 @@
         margin: 0 8px 8px 0
     .thead
       display: none
+    .td-sum
+      font-weight: 500
+      font-size: 20px
 
   .history
     margin: 40px 0 42px
@@ -153,8 +164,16 @@
     max-width: 220px
 
   header
-    .logo
-      margin: 0 20px 0 0
+    .btn-group
+      display: none
+
+  .btn-burger
+    display: flex
+    flex-direction: column
+    margin-left: 15px
+
+  .dropdown-cabinet
+    margin-right: 0
 
   .registration-box
     max-width: 500px
@@ -196,8 +215,6 @@
   .thead
     display: none
 
-  //.tbody .td
-  //  padding: 16px
 
   .table
     margin: 24px 0 0
@@ -245,6 +262,14 @@
   .form-chat .registration-box__body
     padding: 30px 16px
 
+  .registration-box-settings
+    .registration-box__body
+      padding: 24px 16px
+    .text
+      width: 100%
+      max-width: none
+      margin: 0 0 16px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
   .wrapper-registration
@@ -263,8 +288,7 @@
   header
     border: none
     padding: 9px 0 0
-    .btn-group
-      display: none
+
 
   .search-wrapper
     max-width: none
@@ -273,8 +297,7 @@
     margin: 9px 0 0
 
   .btn-burger
-    display: flex
-    flex-direction: column
+    margin-left: auto
 
   .user-menu, .dropdown-cabinet
     display: none
@@ -369,7 +392,7 @@
         width: 100%
 
   .modal__div
-    max-width: 343px
+    max-width: 345px
     h2
       font-size: 22px
     &-head
@@ -463,5 +486,31 @@
       font-weight: 500
 
   .file-result__box
-    width: 60px
+    width: 68px
     height: 60px
+
+  .info-finance-line:last-child
+    .w-50
+      width: 100%
+    .info-finance-line__item
+      margin: 0 0 24px
+      &:last-child
+        margin: 0
+
+  .file-result-order
+    margin: 16px -4px 0
+    width: calc(100% + 8px)
+    .file-result__box
+      width: 106px
+      height: 98px
+      padding: 0 4px
+      margin: 0 0 8px
+      &:last-child
+        margin: 0
+
+  .modal__div-body
+    .file-result__box
+      width: 106px
+      height: 98px
+      padding: 0 4px
+      margin: 0 0 8px
