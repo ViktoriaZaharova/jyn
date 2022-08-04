@@ -685,12 +685,15 @@
       flex-wrap: wrap
       width: calc(100% + 5px)
 
+
+
+
 .image-chat
   overflow: hidden
-  margin: 0 0 6px
+  margin: 0 8px 6px 0
   border-radius: 8px
-  height: 156px
-  width: 100%
+  height: 75px
+  width: 79px
   position: relative
   &:before
     content: ''
@@ -705,19 +708,35 @@
       size: 100%
     opacity: 0
     transition: .3s ease
+    z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #000
+    opacity: 0
+    transition: .3s ease
+    border-radius: 8px
   &:hover
+    &:after
+      opacity: .5
     &:before
       opacity: 1
   img
     width: 100%
     height: 100%
     object-fit: cover
+  &:last-child
+    margin-right: 0
 
-.image-chat-min
-  max-width: 156px
-
-.image-chat-max
-  max-width: 260px
+//.image-chat-min
+//  max-width: 156px
+//
+//.image-chat-max
+//  max-width: 260px
 
 .message-input
   width: calc(100% - 130px - 36px)
@@ -785,6 +804,9 @@
   width: fit-content
   font-size: 16px
   line-height: 24px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
   &:before
     content: ''
     position: absolute
@@ -926,6 +948,16 @@
     @include d-flex
     margin: 0 0 8px 0
     padding: 0 4px
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      top: 0
+      height: 100%
+      background: #000
+      opacity: .3
+      width: calc(100% - 8px)
     &:last-child
       margin: 0 0 8px
     img
@@ -933,6 +965,8 @@
       height: 100%
       object-fit: cover
       border-radius: 8px
+
+
 
 .file-result-order
   width: calc(100% + 12px)
@@ -942,7 +976,39 @@
     height: 124px
     margin: 0 0 12px
     padding: 0 6px
-
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      top: 0
+      height: 100%
+      width: calc(100% - 12px)
+      background: #000
+      opacity: 0
+      transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: url("../img/lupe.svg") no-repeat center
+        size: 100%
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s ease
+      opacity: 0
+      z-index: 1
+    &:hover
+      &:after
+        opacity: .3
+      &:before
+        opacity: 1
     &:last-child
       margin: 0
 
@@ -951,6 +1017,7 @@
   stroke: #fff
   top: 2px
   right: 6px
+  z-index: 1
   position: absolute
   border: 1.5px solid #FFFFFF
     radius: 50%

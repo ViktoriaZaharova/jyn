@@ -195,6 +195,14 @@ textarea {
           justify-content: center;
   fill: none;
   stroke: #ffffff; }
+  .btn-view-password .svg-icon-hide {
+    display: none; }
+  .btn-view-password.view .svg-icon {
+    display: none; }
+  .btn-view-password.view .svg-icon-hide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .input-subtext {
   position: absolute;
