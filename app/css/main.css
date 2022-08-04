@@ -457,11 +457,16 @@
     stroke: #fff; }
 
 .icon-arrow-price {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 14px;
   fill: none;
   stroke: #676767;
   margin: 0 0 -3px 4px; }
+  .icon-arrow-price:last-child {
+    margin-left: 0; }
+
+.icon-close-price {
+  width: 14px; }
 
 .filter-wrapper {
   width: 100%;
