@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>JYN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.jpg" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <div class="user-photo"></div>
+      <div class="user-name">Jane Cooper</div>
+    </div>
+    <div class="mobile-menu__body">
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Мои финансы</span>
+        <span class="money-value">3 245.50  ₽</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Настройки</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Центр помощи</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Выход</span>
+      </a>
+    </div>
+    <div class="mobile-menu__footer">
+      <a href="#modal1" class="btn btn-white btn-lg open_modal">Подать объявление</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">JYN</a>
+
+      <div class="search-wrapper">
+        <form method="post" class="form-search">
+          <label>
+            <input type="text" placeholder="Поиск по играм" name="search" required>
+            <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+          </label>
+          <button type="submit" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-result">
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dark Orbit</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Drakensang Online</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Diablo Immortal</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dota 2</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="user-menu">
+        <a href="#" class="user-menu__link color-white font-500">Мои сделки
+          <span class="user-menu__val">23</span>
+        </a>
+      </div>
+
+      <div class="dropdown dropdown-cabinet">
+        <div class="user-avatar dropdown-toggle"></div>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu__head">
+            <div class="user-photo"></div>
+            <div class="user-name">Jane Cooper</div>
+          </div>
+          <div class="dropdown-menu__body">
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Мои финансы</span>
+              <span class="money-value">3 245.50  ₽</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Настройки</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Центр помощи</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Выход</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#modal1" class="btn btn-white btn-md open_modal">Подать объявление</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <section class="order-section">
+      <div class="container">
+        <h1>Оформление заказа</h1>
+
+        <div class="w-100">
+          <div class="row">
+            <div class="col-6 mb-16">
+              <div class="registration-box order-box">
+                <div class="registration-box__head">
+                  <h2>Подробности</h2>
+                </div>
+                <form method="post" class="form">
+                  <div class="registration-box__body">
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Описание</p>
+                      </div>
+                      <div class="box-text description-text">
+                        <p>84 уровень батл пасса 13 сезона. Все персонажи открыты
+                          137900 жетонов легенд.
+                          Вся информация находится в видео
+                          Ссылка
+                          https://www.youtube.com/</p>
+                      </div>
+
+                      <div class="selected-additions">
+                        <div class="selected-additions__head">
+                          <p>121 скин</p>
+                        </div>
+                        <div class="selected-additions__body scroll-vertical">
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small1.png" alt=""></div>
+                              <div class="selected-additions-box__text">Mystique</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small2.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small3.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small4.png" alt=""></div>
+                              <div class="selected-additions-box__text">Scuba Jonesy</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small5.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small4.png" alt=""></div>
+                              <div class="selected-additions-box__text">Scuba Jonesy</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small3.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small5.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small2.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small1.png" alt=""></div>
+                              <div class="selected-additions-box__text">Mystique</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small1.png" alt=""></div>
+                              <div class="selected-additions-box__text">Mystique</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small2.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small3.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small4.png" alt=""></div>
+                              <div class="selected-additions-box__text">Scuba Jonesy</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small5.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small4.png" alt=""></div>
+                              <div class="selected-additions-box__text">Scuba Jonesy</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small3.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small5.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small2.png" alt=""></div>
+                              <div class="selected-additions-box__text">X-Lord</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small1.png" alt=""></div>
+                              <div class="selected-additions-box__text">Mystique</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="selected-additions">
+                        <div class="selected-additions__head">
+                          <p>122 кирки</p>
+                        </div>
+                        <div class="selected-additions__body scroll-vertical">
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small6.png" alt=""></div>
+                              <div class="selected-additions-box__text">Yautja Wristblades</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box">
+                              <div class="selected-additions-box__image"><img src="img/small7.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Scythe</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="selected-additions">
+                        <div class="selected-additions__head">
+                          <p>100 танцев</p>
+                        </div>
+                        <div class="selected-additions__body scroll-vertical">
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small8.png" alt=""></div>
+                              <div class="selected-additions-box__text">Take The Cake</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-green-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small9.png" alt=""></div>
+                              <div class="selected-additions-box__text">Ready When Yo...</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="selected-additions">
+                        <div class="selected-additions__head">
+                          <p>110 дельтапланы</p>
+                        </div>
+                        <div class="selected-additions__body scroll-vertical">
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small11.png" alt=""></div>
+                              <div class="selected-additions-box__text">Fusion Coil</div>
+                            </div>
+                          </div>
+                          <div class="col-20">
+                            <div class="selected-additions-box bg-orange-gradient">
+                              <div class="selected-additions-box__image"><img src="img/small10.png" alt=""></div>
+                              <div class="selected-additions-box__text">Eagle's Form</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Привязки к соц. сетям</p>
+                        </div>
+                        <span>Нет</span>
+                      </div>
+
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Возможность смены почты</p>
+                        </div>
+                        <span>Нет (25 окт 2022)</span>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Уровень аккаунта</p>
+                        </div>
+                        <span>2275</span>
+                      </div>
+
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Баланс</p>
+                        </div>
+                        <span>50 (EpicPC)</span>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Всего побед</p>
+                        </div>
+                        <span>354</span>
+                      </div>
+
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Последний сезон</p>
+                        </div>
+                        <span>21</span>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Battle Pass</p>
+                        </div>
+                        <span>Да</span>
+                      </div>
+
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Уровень Battle Pass</p>
+                        </div>
+                        <span>100</span>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Регистрация аккаунта</p>
+                        </div>
+                        <span>4 мар 2019</span>
+                      </div>
+
+                      <div class="w-50">
+                        <div class="input-title">
+                          <p>Почтовый домен</p>
+                        </div>
+                        <span>rambler.ru</span>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row">
+                      <div class="input-title">
+                        <p>Способ вывода средств</p>
+                      </div>
+                      <div class="dropdown dropdown-select">
+                        <div class="dropdown-toggle">
+                          <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+                          <p>Банковская карта</p>
+                          <div class="dropdown-toggle__icon"></div>
+                        </div>
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">Qiwi </span>
+                          </a>
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">ЮMoney</span>
+                          </a>
+                          <a href="#" class="dropdown-menu__link">
+                            <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                            <span class="dropdown-menu__link-text">Банковская карта</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="input-description">Комиссия: 5%</div>
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <button type="submit" class="btn btn-accent btn-lg">Оплатить 410 ₽</button>
+
+                    <div class="attention-text">
+                      <p>Продавец не сможет получить оплату до тех пор, пока вы не подтвердите выполнение им всех
+                        обязательств.</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-4 mb-16">
+              <div class="registration-box order-box chat-box">
+                <div class="registration-box__head">
+                  <h2>Чат</h2>
+                  <div class="salesman-box">
+                    <div class="salesman-box__photo"><img src="img/photo3.jpeg" alt="">
+                      <div class="status status-off"></div>
+                    </div>
+                    <div class="salesman-box__name">Leslie Alexander</div>
+                  </div>
+                </div>
+                <form method="post" class="form form-chat">
+                  <div class="registration-box__body">
+                    <div class="text-info">
+                      <p>Задайте продавцу вопрос</p>
+                    </div>
+
+                    <div class="quote-box">
+
+                    </div>
+                  </div>
+
+                  <div class="registration-box__footer">
+                    <label class="message-input">
+                      <input type="text" name="chat" placeholder="Написать...">
+                    </label>
+
+                    <button type="submit" class="btn btn-border add-quote btn-md">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2022 Jyn.ru</div>
+      <ul class="footer-list my-ul">
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
+      </ul>
+
+
+      <ul class="list-social my-ul">
+        <li><a href="#">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a></li>
+        <li><a href="#" class="vk-link">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+<div class="modal__div" id="modal1">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Подать объявление</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сервер</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">PC
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Настройки</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Описание</p>
+          </div>
+          <label>
+            <textarea name="message"></textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="label-file">
+            <input type="file" class="input-file" name="file">
+            <span class="label-file__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#file"></use></svg></span>
+            <span class="label-file__text">Загрузить изображение</span>
+          </label>
+          <div class="file-result">
+            <div class="file-result__box">
+              <img src="img/file6.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file7.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file8.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file9.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file10.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file11.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="file-result__box">
+              <img src="img/file12.jpeg" alt="">
+              <a href="#" class="btn-delete-file">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Количество</p>
+          </div>
+          <label>
+            <input type="text" value="12" class="input-password" name="value" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Цена</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-lg">Отмена</a>
+          <button type="submit" class="btn btn-white btn-lg">Опубликовать</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal__div" id="modal2">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Вывод средств</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Способ вывода средств</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">
+              <div class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></div>
+              <p>Банковская карта</p>
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay3.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Qiwi </span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">ЮMoney</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/pay1.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Банковская карта</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Номер карты</p>
+          </div>
+          <label>
+            <input type="text" value="4234 2224 5423 5356" name="number_card" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сумма</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+
+        <div class="form-row total-sum">
+          <div class="total-sum-val">
+            <p>Итого к получению:</p>
+            <span>710 ₽</span>
+          </div>
+
+          <div class="percent">
+            <p>Комиссия: </p>
+            <span>10 ₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-md">Отмена</a>
+          <button type="submit" class="btn btn-white btn-md">Вывести деньги</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
